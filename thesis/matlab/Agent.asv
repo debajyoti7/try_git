@@ -1,0 +1,17 @@
+classdef Agent
+    %UNTITLED Summary of this class goes here
+    %   Detailed explanation goes here
+    
+    properties
+        AgentId %Agent Id
+        EnterpriseId %Id of the enterprise that the agent is a member of
+        Belief1 %Membership value for belief function 1
+        Belief2 %Membership value for belief functio 2
+    end
+    
+    methods
+        function = set.AgentID
+    end
+    
+end
+
