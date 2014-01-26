@@ -1,6 +1,6 @@
 classdef Agent
-    %UNTITLED Summary of this class goes here
-    %   Detailed explanation goes here
+    %AGENT Class model for agent node
+    %   This class models the basic attributes for an agent node
     
     properties
         AgentId %Agent Id
