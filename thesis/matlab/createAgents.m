@@ -5,7 +5,8 @@ for i = 1:Num_Agents
     Ent_Id = randi(4,1,1);
     b1 = rand();
     b2 = rand();
-    a(i) = Agent(i,Ent_Id,b1,b2);
+    c1 = 0;
+    a(i) = Agent(i,Ent_Id,b1,b2,c1);
 end
 end
 

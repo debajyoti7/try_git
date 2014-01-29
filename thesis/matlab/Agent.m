@@ -1,4 +1,4 @@
-classdef Agent < hgsetget
+classdef Agent
     %AGENT Class model for agent node
     %   This class models the basic attributes for an agent node
     
@@ -11,20 +11,23 @@ classdef Agent < hgsetget
     end
     
     methods
-        function obj = Agent(id, eId, b1, b2)
+        function obj = Agent(id, eId, b1, b2, c1)
             %Default, parameterised Constructor for the class Agent
             obj.AgentId = id;
             obj.EnterpriseId = eId;
             obj.Belief1 = b1;
             obj.Belief2 = b2;
-            obj.NumOfConnections = 0;
+            obj.NumOfConnections = c1;
         end
         
-        function obj = set.NumOfConnections(obj,k)
-            %Method used for changing the number of connections for a
-            %specific Agent node. NOTE : if k is negative, then it
-            %represents removing a connection.
-            obj.NumOfConnections = obj.NumOfConnections + k;
+        function obj = makeConnection(obj)
+            %Method used to increase the connection counter by 1
+            obj.NumOfConnections = obj.NumOfConnections + 1;
+        end
+        
+        function obj = removeConnection(obj)
+            %Method used to decrease the connection counter by 1
+            obj.NumOfConnections = obj.NumOfConnections - 1;
         end
         
     end
