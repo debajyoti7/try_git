@@ -6,13 +6,15 @@ classdef Connections
     properties
         m1 %first member of a connection edge
         m2 %second member of a connection edge
+        val %value of the connection
     end
     
     methods
-        function obj = Connections(a,b)
+        function obj = Connections(a,b,c)
             %Default, parameterised constructon for the class
             obj.m1 = a;
             obj.m2 = b;
+            obj.val = c;
         end
     end
     
