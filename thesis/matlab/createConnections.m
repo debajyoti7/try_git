@@ -8,12 +8,12 @@ for i = 1 : (Num_Agents-1)
     for j = (i+1) : Num_Agents
         a = sqrt(power((s(i).Belief1 - s(j).Belief1),2) + power((s(i).Belief2 - s(j).Belief2),2));
         listConnections(index) = Connections(i,j,a);
-        s(i) = s(i).makeConnection();
-        s(j) = s(j).makeConnection();
-     
+            
         if a <= 0.5 %Strong signal
             weak(weakIndex) = Connections(i,j,a); 
             weakIndex = weakIndex + 1; 
+            s(i) = s(i).makeConnection();
+            s(j) = s(j).makeConnection();
         else
             strong(strongIndex) = Connections(i,j,a);
             strongIndex = strongIndex + 1;
