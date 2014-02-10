@@ -1,4 +1,4 @@
-function [ probability ] = findProbability( newAgent, agents, connections )
+function [ probabilityBA , probabilityMod ] = findProbability( newAgent, agents, connections )
 %findProbability This computes the probability of a connection being formed
 %   This function finds the chances of a connection to be formed, for a
 %   given network and an incoming node. It should keep up with the concept
@@ -13,8 +13,10 @@ end
 totalConnections = sum(j);
 
 for i = 1:numAgents
-    probability(i) = agents(i).NumOfConnections / totalConnections;
+    probabilityBA(i) = agents(i).NumOfConnections / totalConnections;
 end
+
+%disp(probability); %display BA-probability
 
 %Modify probability based on belief values  - Extra work on top of B-A
 %model
@@ -23,7 +25,7 @@ end
 
 for i = 1:numAgents
     distance = sqrt(power((agents(i).Belief1 - newAgent.Belief1),2) + power((agents(i).Belief2 - newAgent.Belief2),2));
-    probability(i) = probability(i) + distance;
+    probabilityMod(i) = (probabilityBA(i) + (1-distance)) / 2; %self-loop goes to 0.5
 end
 
 end
