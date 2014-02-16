@@ -10,7 +10,7 @@ for i = 1 : (Num_Agents-1)
         listConnections(index) = Connections(i,j,a);
 
         %TO DO : move to someplace else
-        if a <= 0.25 %Strong signal , 0.25 means over 0.75 strengthm because distance is inversely related
+        if a <= 0.25 %Strong signal , 0.25 means over 0.75 strength because distance is inversely related
             strong(strongIndex) = Connections(i,j,a);
             strongIndex = strongIndex + 1;
             s(i) = s(i).makeConnection();
