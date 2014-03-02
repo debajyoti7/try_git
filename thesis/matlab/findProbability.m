@@ -26,6 +26,8 @@ end
 for i = 1:numAgents
     distance = sqrt(power((agents(i).Belief1 - newAgent.Belief1),2) + power((agents(i).Belief2 - newAgent.Belief2),2));
     probabilityMod(i) = (probabilityBA(i) + (1-distance)) / 2; %self-loop goes to 0.5
+    if(probabilityMod(i) < 0)
+        probabilityMod(i) = 0;
 end
 
 end
