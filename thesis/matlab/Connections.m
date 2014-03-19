@@ -12,9 +12,11 @@ classdef Connections
     methods
         function obj = Connections(a,b,c)
             %Default, parameterised constructon for the class
-            obj.m1 = a;
-            obj.m2 = b;
-            obj.val = c;
+            if nargin > 0 
+                obj.m1 = a;
+                obj.m2 = b;
+                obj.val = c;
+            end
         end
     end
     

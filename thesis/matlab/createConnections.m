@@ -1,11 +1,17 @@
 function [ weak, strong, listConnections, s ] = createConnections( s, Num_Agents )
 %createConnections Create connections between the different agent nodes
 %   Randomly assign unique, bi-directional connectins between nodes
+weak = Connections.empty(Num_Agents,0);
+strong = Connections.empty(Num_Agents,0);
+listConnections = Connections.empty(Num_Agents,0);
 index = 1;
 weakIndex = 1;
 strongIndex = 1;
 for i = 1 : (Num_Agents-1)
-    for j = (i+1) : Num_Agents
+    for j = 1 : Num_Agents
+        if(i == j)
+            continue
+        end
         a = sqrt(power((s(i).Belief1 - s(j).Belief1),2) + power((s(i).Belief2 - s(j).Belief2),2));
         listConnections(index) = Connections(i,j,a);
 
