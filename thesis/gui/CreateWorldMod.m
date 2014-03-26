@@ -1,5 +1,5 @@
 function [ s, t, degree, weight ] = CreateWorldMod( N, d, s, t, degree )
-%UNTITLED6 Summary of this function goes here
+%CreateWorldMod This creates the world using modifiers
 %   Detailed explanation goes here
 
 likeMindedness = rand(N,1);

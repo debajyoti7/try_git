@@ -1,5 +1,5 @@
 function [ s, t, degree ] = CreateWorld( N, d, s, t, degree )
-%UNTITLED6 Summary of this function goes here
+%CreateWorld This creates the world according to BA model
 %   Detailed explanation goes here
 
 for i=d+2:N
