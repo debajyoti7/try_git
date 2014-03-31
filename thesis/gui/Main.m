@@ -1,4 +1,4 @@
-function [ finalWorld, degreeList, s, t, weight] = Main( numAgents, averageConnections, mode )
+function [ edgeList, degreeList, vertexList, weight] = Main( numAgents, averageConnections, mode )
 %Main Generates and simulates a scale free network.
 %   This follows the approach presented by BA-algorithm to create a
 %   fully-connected seed network and introduce new nodes to it (Continuous
@@ -25,7 +25,9 @@ if mode == 2
     [s, t, degreeList, weight] = CreateWorldMod(numAgents, averageConnections, s, t, seedDegree);
 end
 
-finalWorld = [s, t];
+edgeList = [s, t];
+
+vertexList = Simulate(numAgents);
 %return
 end
 

@@ -5,7 +5,7 @@ function [ s, t, degree ] = CreateWorld( N, d, s, t, degree )
 for i=d+2:N
     prob=degree/sum(degree); %change here to account for belief values
     nodeProb=[(1:length(prob))' prob];
-    Connect=datasample(nodeProb(:,1),floor(d/2),'Replace',false,'Weights',prob);
+    Connect=datasample(nodeProb(:,1),floor(d/2),'Replace',false,'Weights',prob); %make half of average connections outgoing
     s=[s;ones(floor(d/2),1)*i];
     t=[t;Connect];
 

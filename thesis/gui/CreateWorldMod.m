@@ -7,6 +7,8 @@ likeMindedness = rand(N,1);
 for i=d+2:N
     prob=degree/sum(degree); %change here to account for belief values
     weight = zeros(length(prob),1);    
+    
+    %likeMindedness = rand(N,1);
 
     for j = 1:length(weight)
         weight(j) = abs(likeMindedness(i)-likeMindedness(j));
@@ -16,7 +18,7 @@ for i=d+2:N
     prob = prob + weight;
     
     nodeProb=[(1:length(prob))' prob];
-    Connect=datasample(nodeProb(:,1),floor(d/2),'Replace',false,'Weights',prob);
+    Connect=datasample(nodeProb(:,1),floor(d/2),'Replace',false,'Weights',prob); %make half of average connections outgoing
     s=[s;ones(floor(d/2),1)*i];
     t=[t;Connect];
 
