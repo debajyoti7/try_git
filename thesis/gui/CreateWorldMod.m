@@ -1,4 +1,4 @@
-function [ s, t, degree, weight ] = CreateWorldMod( N, d, s, t, degree )
+function [ s, t, degree, weight, f, g ] = CreateWorldMod( N, d, s, t, degree )
 %CreateWorldMod This creates the world using modifiers
 %   Detailed explanation goes here
 

@@ -1,4 +1,4 @@
-function [ edgeList, degreeList, vertexList, weight] = Main( numAgents, averageConnections, mode )
+function [ edgeList, degreeList, vertexList, colorList, weight, in, out] = Main( numAgents, averageConnections, mode, simNum, view )
 %Main Generates and simulates a scale free network.
 %   This follows the approach presented by BA-algorithm to create a
 %   fully-connected seed network and introduce new nodes to it (Continuous
@@ -13,21 +13,36 @@ function [ edgeList, degreeList, vertexList, weight] = Main( numAgents, averageC
 seedDegree = ComputeSeedDegree(s, t, averageConnections);
  
 % mode 1, B-A model
-if mode==1
+if mode == 1
 
     %create the whole world
-    [s, t, degreeList] = CreateWorld(numAgents, averageConnections, s, t, seedDegree);
+    [s, t, degreeList, in, out] = CreateWorld(numAgents, averageConnections, s, t, seedDegree);
     weight = ones(numAgents,1);
 end
 
 %mode 2, modified based on 'likemindedness' parameter or 'knowledgelist'
 if mode == 2
-    [s, t, degreeList, weight] = CreateWorldMod(numAgents, averageConnections, s, t, seedDegree);
+    [s, t, degreeList, weight, in, out] = CreateWorldMod(numAgents, averageConnections, s, t, seedDegree);
 end
 
-edgeList = [s, t];
+edgeId = (1:length(s))';
+edgeList = [edgeId, s, t];
 
-vertexList = Simulate(numAgents);
+if view == 1
+    [bioGraph, handle] = PlotWorld(numAgents, edgeList);
+end
+
+colorList = randi(4,[numAgents,1]);
+for i = 1: simNum
+    [vertexList, colorList] = Simulate(colorList, edgeList);
+    figure;
+    hist(colorList);
+    hold on
+    %axis equal
+    %M(i) = getframe;
+    
+end
+    %movie2avi(M, 'April1.avi', 'compression','None');
 %return
 end
 
