@@ -32,17 +32,9 @@ if view == 1
     [bioGraph, handle] = PlotWorld(numAgents, edgeList);
 end
 
-colorList = randi(4,[numAgents,1]);
-for i = 1: simNum
-    [vertexList, colorList] = Simulate(colorList, edgeList);
-    figure;
-    hist(colorList);
-    hold on
-    %axis equal
-    %M(i) = getframe;
+colorList = randi(50,[numAgents,1]);
+[vertexList, colorList] = Simulate(colorList, edgeList, simNum);
     
-end
-    %movie2avi(M, 'April1.avi', 'compression','None');
 %return
 end
 
