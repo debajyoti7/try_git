@@ -32,7 +32,7 @@ if view == 1
     [bioGraph, handle] = PlotWorld(numAgents, edgeList);
 end
 
-colorList = randi(50,[numAgents,1]);
+colorList = randi(4,[numAgents,1]);
 [vertexList, colorList] = Simulate(colorList, edgeList, simNum);
     
 %return
