@@ -1,4 +1,4 @@
-function [ edgeList, degreeList, vertexList, colorList, weight, in, out] = Main( numAgents, averageConnections, mode, simNum, view )
+function [ edgeList, degreeList, vertexList, colorList, fnc, weight, in, out] = Main( numAgents, averageConnections, mode, simNum, view )
 %Main Generates and simulates a scale free network.
 %   This follows the approach presented by BA-algorithm to create a
 %   fully-connected seed network and introduce new nodes to it (Continuous
@@ -32,8 +32,11 @@ if view == 1
     [bioGraph, handle] = PlotWorld(numAgents, edgeList);
 end
 
-colorList = randi(4,[numAgents,1]);
-[vertexList, colorList] = Simulate(colorList, edgeList, simNum);
+%colorList = ones(averageConnections+1, 1);
+%colorList = [colorList; zeros((numAgents-(averageConnections+1)),1)];
+colorList = randi(50,[numAgents, 1]);
+
+[vertexList, colorList, fnc] = Simulate(colorList, edgeList, simNum);
     
 %return
 end

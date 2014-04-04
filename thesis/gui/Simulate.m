@@ -1,4 +1,4 @@
-function [ vertexList, colorList ] = Simulate( colorList, edgeList, simNum )
+function [ vertexList, colorList, fnc ] = Simulate( colorList, edgeList, simNum )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -9,10 +9,10 @@ vertexList = [xPos, yPos, colorList];
 
 beliefList = randi(5,[N,1]);
 
-for j = 1:5
-    colorList(edgeList(j,3)) = 5;
-    colorList(edgeList(j,2)) = 5;
-end
+clr = randi(50,1); % randomly selected color to track
+step = 0;
+value = length(find(colorList == clr));
+fnc = [step, value];
 
 pause on
 [n,xout] = hist(colorList);
@@ -23,16 +23,16 @@ set(h,'XDataSource','xout','YDataSource','n');
 for i = 1: simNum
     pick = randi(length(edgeList),1);
     
-    %{
-    if i == agentJ
-        pick = agentJ;
-    end
-   %}
     dist = abs(beliefList(edgeList(pick,3)) - beliefList(edgeList(pick,2)));
-    if (dist < 0.25)
-        colorList(edgeList(pick,3)) = colorList(edgeList(pick,2));
+    if (colorList(edgeList(pick,2)) == clr)
+        %if (dist > 2)
+            colorList(edgeList(pick,3)) = colorList(edgeList(pick,2));
+            step = i;
+            value = length(find(colorList == clr));
+            fnc = [fnc;[step, value]]; % track every increment/spread with respect to time step
+        %end
     end
-    
+
     %count = 1;
     if mod(i,100)==0
         %figure;
