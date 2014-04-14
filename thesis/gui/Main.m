@@ -36,7 +36,7 @@ end
 %colorList = [colorList; zeros((numAgents-(averageConnections+1)),1)];
 colorList = randi(50,[numAgents, 1]);
 
-[vertexList, colorList, fnc] = Simulate(colorList, edgeList, simNum);
+[vertexList, colorList, fnc] = SimulateVirus(colorList, degreeList, edgeList, simNum);
     
 %return
 end
