@@ -5,7 +5,11 @@ function [ vertexList, colorList, fnc ] = SimulateVirus( colorList, degreeList, 
 N = length(colorList);
 xPos = randi((N),[N,1]);
 yPos = randi((N),[N,1]);
-vertexList = [xPos, yPos, colorList]; %vertexList(k,1) gives x position, vertexList(k,2) gives y position and vertexList(k,3) gives color membership for k-th agent
+
+%vertexList(k,1) gives x position, vertexList(k,2) gives y position and
+%vertexList(k,3) gives color membership for k-th agent
+vertexList = [xPos, yPos, colorList]; 
+
 
 beliefList = randi(5,[N,1]);
 for a = 1 : length(beliefList)
@@ -30,7 +34,7 @@ y50 = 0; %vertexList(c2,2);
 %initialize starting point for tracking
 time = 1;
 value1 = 1;
-value2 = 1;
+value2 = 50;
 
 %seed the colors in the network
 colorList(10:110) = 1;
@@ -40,10 +44,21 @@ colorList(240:500) = 25;
 colorList(c1) = 1;
 colorList(c2) = 50;
 
-value1count = length(find(colorList == 1));
+value1count = length(find(colorList == value1));
 value2count = length(find(colorList == 50));
+spread1count = 0;
+spread2count = 0;
+cost1 = 0;
+cost2 = 0;
 
-fnc = [time, value1count, value2count];
+%shiftI1 is for influenced agent, and shift I2 is for influencing agent and
+%company itself, for compnay I
+shift11 = 5;
+shift12 = 10;
+shift21 = shift11;
+shift22 = shift12;
+
+fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2];
 
 pause on
 
@@ -71,10 +86,14 @@ for i = 1: simNum
     if (colorList(influencingAgent) == value1)
         x = x1;
         y = y1;
+        shiftFactorA = shift11;
+        shiftFactorB = shift12;
     else 
         if ((colorList(influencingAgent)) == value2)
             x = x50;
             y = y50;
+            shiftFactorA = shift21;
+            shiftFactorB = shift22;
         end
     end
     
@@ -82,9 +101,6 @@ for i = 1: simNum
     dist = beliefList(influencingAgent);
     if ((colorList(influencingAgent) == value1) || (colorList(influencingAgent) == value2))
         if (dist > 0.025)
-            
-            shiftFactorA = 5;
-            shiftFactorB = 10;
             
             %experimental change ,  TO DO : change initial spread to
             %ternary distribution
@@ -108,26 +124,29 @@ for i = 1: simNum
             time = i;
             
             if (colorList(influencingAgent) == value1)
-                value1count = value1count + 1;
-                if(colorList(influencedAgent) == value2)
-                    %value2count = value2count - 1;
+                spread1count = spread1count + 1;
+                cost1 = cost1 + (1/shiftFactorB);
+                if( mod(cost1, 2)  == 0)
+                    shift12 = shift12/2; %not affecting shift11 and shift21 for now
                 end
             else
-                value2count = value2count + 1;
-                if(colorList(influencedAgent) == value1)
-                    value1count = value1count - 1;
+                spread2count = spread2count + 1;
+                cost2 = cost2 + (1/shiftFactorB);
+                if( mod(cost2, 2) == 0)
+                    shift22 = shift22/2;
                 end
             end
             
-            %value2count = length(find(colorList == 50));
+            value1count = length(find(colorList == value1));
+            value2count = length(find(colorList == 50)); 
             
-            fnc = [fnc; [time, value1count, value2count]];
+            fnc = [fnc; [time, value1count, value2count, spread1count, spread2count, cost1, cost2]];
 
-            
+            %{
             if(i == 500)
                 value2 = 50;
             end
-            
+            %}
         end
     end
 
