@@ -25,11 +25,11 @@ c2 = find(degreeList == max(degreeList), 1);
 degreeList(c1) = c1Val;
 
 %initialize cluster centers
-x1 = 0; %vertexList(c1,1); 
-y1 = N; %vertexList(c1,2);
+x1 = N/4; %vertexList(c1,1); 
+y1 = N/2; %vertexList(c1,2);
 
-x50 = N; %vertexList(c2,1);
-y50 = 0; %vertexList(c2,2);
+x50 = N*(3/4); %vertexList(c2,1);
+y50 = N/2; %vertexList(c2,2);
 
 %initialize starting point for tracking
 time = 1;
