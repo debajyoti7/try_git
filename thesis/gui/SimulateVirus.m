@@ -37,8 +37,8 @@ value1 = 1;
 value2 = 50;
 
 %seed the colors in the network
-colorList(10:110) = 1;
-colorList(120:220) = 50;
+colorList(10:110) = 50;
+colorList(120:220) = 1;
 colorList(240:500) = 25;
 
 colorList(c1) = 1;
@@ -54,9 +54,10 @@ cost2 = 0;
 %shiftI1 is for influenced agent, and shift I2 is for influencing agent and
 %company itself, for compnay I
 shift11 = 5;
-shift12 = 10;
-shift21 = shift11;
-shift22 = shift12;
+shift12 = 2*shift11;
+
+shift21 = 1;
+shift22 = 2 * shift21;
 
 fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2];
 
@@ -127,12 +128,14 @@ for i = 1: simNum
                 spread1count = spread1count + 1;
                 cost1 = cost1 + (1/shiftFactorB);
                 if( mod(cost1, 2)  == 0)
+                    shift11 = shift11/2;
                     shift12 = shift12/2; %not affecting shift11 and shift21 for now
                 end
             else
                 spread2count = spread2count + 1;
                 cost2 = cost2 + (1/shiftFactorB);
                 if( mod(cost2, 2) == 0)
+                    shift21 = shift21/2;
                     shift22 = shift22/2;
                 end
             end
