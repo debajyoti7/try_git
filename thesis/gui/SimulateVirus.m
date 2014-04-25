@@ -6,16 +6,16 @@ N = length(colorList);
 xPos = randi((N),[N,1]);
 yPos = randi((N),[N,1]);
 
-%vertexList(k,1) gives x position, vertexList(k,2) gives y position and
-%vertexList(k,3) gives color membership for k-th agent
-vertexList = [xPos, yPos, colorList]; 
-
-
 beliefList = randi(5,[N,1]);
 for a = 1 : length(beliefList)
     %assign belief value as a function of number of connections of the agent  
     beliefList(a) = ( length(find(edgeList(:,2) == a)) + length(find(edgeList(:,3) == a)) ) / max(degreeList);
 end
+
+%vertexList(k,1) gives x position, vertexList(k,2) gives y position and
+%vertexList(k,3) gives color membership for k-th agent
+vertexList = [xPos, yPos, colorList, beliefList]; 
+
 
 %find the top two most-connected agents
 c1Val = max(degreeList);
@@ -100,7 +100,8 @@ for i = 1: simNum
     %dist = abs(beliefList(edgeList(pick,3)) - beliefList(edgeList(pick,2)));
     dist = beliefList(influencingAgent);
     if ((colorList(influencingAgent) == value1) || (colorList(influencingAgent) == value2))
-        if (dist > 0.025)
+        thresh = rand(1);
+        if (dist >= thresh)
             
             %experimental change ,  TO DO : change initial spread to
             %ternary distribution
