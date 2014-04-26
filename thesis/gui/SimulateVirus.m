@@ -72,9 +72,10 @@ cost2 = 0;
 %shiftI1 is for influenced agent, and shift I2 is for influencing agent and
 %company itself, for compnay I
 shift11 = 5;
-shift12 = 10;
-shift21 = shift11;
-shift22 = shift12;
+shift12 = 100;
+
+shift21 = 10;
+shift22 = 200;
 
 fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2];
 
@@ -93,6 +94,15 @@ c = linspace(1,10,length(vertexList(:,1)));
 h2 = scatter(vertexList(:,1),vertexList(:,2),[],colorList);
 set(h2,'XDataSource','vertexList(:,1)', 'YDataSource','vertexList(:,2)');
 
+hold on
+h3 = plot(x1, y1, 'k*');
+set(h3, 'XDataSource','x1','YDatasource','y1');
+
+h4 = plot(x50, y50, 'r*');
+set(h4, 'XDataSource','x50','YDatasource','y50');
+
+hold off
+
 for i = 1: simNum
     pick = randi(length(edgeList),1);  % edgeList(pick) serves as edge ID, 
     % edgeList(pick,2) and edgeList(pick,3) returns agentId on both ends of
@@ -100,26 +110,44 @@ for i = 1: simNum
     
     influencingAgent = edgeList(pick,2);
     influencedAgent = edgeList(pick,3);
+    flag = 0;
     
-    if (colorList(influencingAgent) == value1)
-        x = x1;
-        y = y1;
-        shiftFactorA = shift11;
-        shiftFactorB = shift12;
-    else 
-        if ((colorList(influencingAgent)) == value2)
-            x = x50;
-            y = y50;
-            shiftFactorA = shift21;
-            shiftFactorB = shift22;
-        end
-    end
+%     if (colorList(influencingAgent) == value1)
+%         x = x1;
+%         y = y1;
+%         shiftFactorA = shift11;
+%         shiftFactorB = shift12;
+%     else 
+%         if ((colorList(influencingAgent)) == value2)
+%             x = x50;
+%             y = y50;
+%             shiftFactorA = shift21;
+%             shiftFactorB = shift22;
+%         end
+%     end
     
     %dist = abs(beliefList(edgeList(pick,3)) - beliefList(edgeList(pick,2)));
     dist = beliefList(influencingAgent);
     if ((colorList(influencingAgent) == value1) || (colorList(influencingAgent) == value2))
         thresh = rand(1);
         if (dist >= thresh)
+            
+            
+            if (colorList(influencingAgent) == value1)
+                x = x1;
+                y = y1;
+                shiftFactorA = shift11;
+                shiftFactorB = shift12;
+                flag = 1;
+            else
+                if ((colorList(influencingAgent)) == value2)
+                    x = x50;
+                    y = y50;
+                    shiftFactorA = shift21;
+                    shiftFactorB = shift22;
+                    flag = 2;
+                end
+            end
             
             %experimental change ,  TO DO : change initial spread to
             %ternary distribution
@@ -137,20 +165,34 @@ for i = 1: simNum
             vertexList(influencingAgent, 2) = vertexList(influencingAgent, 2) + ceil((y - vertexList(influencingAgent, 2)) /shiftFactorB);
             
             %TO DO : add cost function, shift company clusters
-            x = x + ceil(x - vertexList(influencedAgent, 1) / shiftFactorB);
-            y = y + ceil(y - vertexList(influencedAgent, 2) / shiftFactorB);
+            x = x + ceil( (vertexList(influencedAgent, 1) - x) / shiftFactorB);
+            y = y + ceil( (vertexList(influencedAgent, 2) - y) / shiftFactorB);
             
+%             if(flag == 1)
+%                 x1 = x1 + ceil( (vertexList(influencedAgent, 1) - x1) / shiftFactorB);
+%                 y1 = y1 + ceil( (vertexList(influencedAgent, 2) - y1) / shiftFactorB);
+%             else
+%                 if (flag == 2)
+%                     x50 = x50 + ceil( (vertexList(influencedAgent, 1) - x50) / shiftFactorB);
+%                     y50 = y50 + ceil( (vertexList(influencedAgent, 2) - y50) / shiftFactorB);
+%                 end
+%             end
+%             
             time = i;
             
             if (colorList(influencingAgent) == value1)
                 spread1count = spread1count + 1;
                 cost1 = cost1 + (1/shiftFactorB);
+                x1 = x;
+                y1 = y;
                 if( mod(cost1, 2)  == 0)
                     shift12 = shift12/2; %not affecting shift11 and shift21 for now
                 end
             else
                 spread2count = spread2count + 1;
                 cost2 = cost2 + (1/shiftFactorB);
+                x50 = x;
+                y50 = y;
                 if( mod(cost2, 2) == 0)
                     shift22 = shift22/2;
                 end
@@ -160,30 +202,22 @@ for i = 1: simNum
             value2count = length(find(colorList == 50)); 
             
             fnc = [fnc; [time, value1count, value2count, spread1count, spread2count, cost1, cost2]];
-
-            %{
-            if(i == 500)
-                value2 = 50;
-            end
-            %}
+            
         end
     end
 
-    %count = 1;
     if mod(i,100)==0
         %figure;
         %[n,xout] = hist(colorList);
         %refreshdata(h,'caller')
         refreshdata(h2, 'caller')
+        refreshdata(h3, 'caller')
+        refreshdata(h4, 'caller')
         drawnow
         %pause(1)
-        %hold all
-        %axis equal
-        %M(count) = getframe;
-        %count = count +1;
+        
     end
 
 end
 pause off
-%movie2avi(M, 'April2.avi', 'compression','None');
 end
