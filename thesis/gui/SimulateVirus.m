@@ -37,14 +37,11 @@ value1 = 1;
 value2 = 50;
 
 %seed the colors in the network
-%use randperm instead of strong initial color seeding
-
 index = randperm(N);
 v1index = index(1 : N/5);
 v2index = index( ((N/5)+1) : N*(2/5));
 v3index = index( (N*(2/5) +1) : (N*(3/5)) );
 v4index = index( (N*(3/5) +1) : (N*(4/5)) );
-
 
 for lv = 1 : length(v1index)
     colorList(v1index) = 1;
@@ -53,14 +50,9 @@ for lv = 1 : length(v1index)
     colorList(v4index) = 25;
 end
 
-%{
-colorList(10:110) = 50;
-colorList(120:220) = 1;
-colorList(240:500) = 25;
-%}
-
-colorList(c1) = 1;
-colorList(c2) = 50;
+%seed top two most-connected nodes in different colors
+colorList(c1) = value1;
+colorList(c2) = value2;
 
 value1count = length(find(colorList == value1));
 value2count = length(find(colorList == 50));
