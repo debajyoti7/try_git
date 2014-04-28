@@ -63,10 +63,10 @@ cost2 = 0;
 
 %shiftI1 is for influenced agent, and shift I2 is for influencing agent and
 %company itself, for compnay I
-shift11 = 5;
+shift11 = 1;
 shift12 = 100;
 
-shift21 = 10;
+shift21 = 1;
 shift22 = 200;
 
 fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2];
