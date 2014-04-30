@@ -37,7 +37,11 @@ end
 colorList = randi(50,[numAgents, 1]);
 
 [vertexList, colorList, fnc] = SimulateVirus(colorList, degreeList, edgeList, simNum);
-    
+
+%save output variables to file
+cd('D:\try_git\thesis\gui\output\data')
+filename = strcat(num2str(numAgents),'_',num2str(mode),'_',num2str(simNum),'_',datestr(now,'dd-mm-yyyy_HH-MM-SS-FFF'),'.mat')
+save(filename,'edgeList','degreeList','vertexList','colorList','fnc');
 %return
 end
 
