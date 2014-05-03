@@ -1,4 +1,4 @@
-% Chapter Template
+	% Chapter Template
 
 \chapter{Methodology} % Main chapter title
 
@@ -6,32 +6,115 @@
 
 \lhead{Chapter 3. \emph{Methodology}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
 
+On an abstract level, the model consists of an environment comprising of numerous agents, and a few companies. What we focus on are the specific strategies used by the companies to attract the agents, and try to measure it's efficiency in terms of the related costs and benefits. Based on these measurements, a company could determine the optimal strategy to maximize it's efficiency for the targeted section or sub-subsection of agents.
+
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Main Section 1}
+\section{The Companies}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+The companies only exist in a superficial form in the model. In this model, each company plays the role by providing a central point for the agents to cluster about, and the movement of this point itself denotes effort made by the company, which in turn incurs a cost to the company.
 
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\subsection{Subsection 1}
+The author decided to keep this model limited to two companies competing for the same spot, i.e., any agent cannot totally belong to both companies at the same time. 
 
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
 
 %-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
-
-\subsection{Subsection 2}
-Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
-
-%----------------------------------------------------------------------------------------
 %	SECTION 2
+%-----------------------------------
+\section{The Agents}
+
+The agents in this model are simpler constructs, each  having a "color" attribute, and this attribute changes as the agents tend to believe in either of the companies.
+
+Structurally, each agent has following attributes :
+
+\begin{enumerate}
+\item ID
+\item x-position coordinate
+\item y-position coordinate
+\item Color value
+\item Influence value
+\end{enumerate}
+
+%-----------------------------------
+%	SECTION 3
+%-----------------------------------
+
+\section{connections}
+The connections between the agents form in such a manner that the model satisfies the requirements of free-scaling. 
+Following in the footsteps of the giants, the implementation is based on the B-A algortithm [REF] .
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\section{Main Section 2}
+\section{Algorithms}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+\begin{algorithm}
+\caption{Create Scale-Free Network}
+\label{ag1}
+\begin{algorithmic}
+\STATE N : Input, total number of agents
+\STATE D : Input, average number of connections
+\IF {$D < N+1$}
+	\STATE Form a \emph{fully connected} network with D+1 agents
+\ENDIF 
+\STATE implement $CG$
+\STATE $i \gets D+1$
+\WHILE{$i < N$} 
+	\STATE $Agent_i \gets newAgent$
+	\STATE assign $likemindedness$ [FORM-REF]
+	\STATE implement $PA$
+	\STATE $k \gets 0$
+	\WHILE{$k \leq \frac{D}{2}$}
+		\STATE calculate $probability_{basic}$ [FORM-REF]
+		\STATE compute $weight$ [FORM-REF]
+		\STATE $probability_{attachment} \gets  probability_{basic} + weight$ 
+		\STATE $Agent_i$ forms $connection_k$ , based on $probability_{attachment}$
+	\ENDWHILE	
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+\clearpage
+
+\begin{algorithm}
+\caption{Simulation}
+\label{alg2}
+\begin{algorithmic}
+\STATE assign $Company$ centres
+\STATE calculate $influence$ [FORM-REF]
+\STATE assign \emph{color} to all agents
+\STATE seed $20\% $ agents to $color1$
+\STATE seed $20\%$ agents to $color50$
+\STATE seed $40\%$ agents to $color25$
+\STATE seed $2 \emph{most influential}$ agents to different companies
+\STATE $J$ : number of iterations
+\STATE $i \gets 0$
+\WHILE{$i \leq J$}
+	\STATE select $edge_i$
+	\IF{ $FromNode_{color}$ = $\emph{color1}$ OR $\emph{color50}$ }
+		\STATE select $threshold$
+		\IF{ $ FromNode_{influence} \geq threshold $ }
+			\STATE $ToNode_{color} \gets ToNode_{color} + \emph{shift}$
+			\STATE $ToNode_{x-coordinate} \gets ToNode_{x-coordinate} + \emph{shift}$
+			\STATE $ToNode_{y-coordinate} \gets ToNode_{y-coordinate} + \emph{shift}$
+			\STATE $Company_{x-coordinate} \gets Company_{x-coordinate} + \emph{shift}$
+			\STATE $Company_{y-coordinate} \gets Company_{y-coordinate} + \emph{shift}$
+		\ENDIF
+	\ENDIF
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+\clearpage
+
+\section{Definitions}
+\begin{enumerate}
+\item \emph{fully connected}
+\item \emph{likemindedness}
+\item \emph{weight}
+\item \emph{Company centre}
+\item \emph{influence}
+\item \emph{shift}
+\end{enumerate}

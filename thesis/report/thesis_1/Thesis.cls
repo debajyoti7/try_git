@@ -387,7 +387,7 @@ Signal Analysis in Complex Networks} % Your thesis title - this is used in the t
 \begin{longtable}[c]{#1}#2\end{longtable}\par
     \cleardoublepage
 }
-\newcommand\listconstants{Physical Constants}
+\newcommand\listconstants{Mathematical Constants}
 \usepackage{longtable}
 \newcommand\listofconstants[2]{
 \btypeout{\listconstants}
