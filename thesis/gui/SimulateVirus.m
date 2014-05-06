@@ -32,7 +32,7 @@ x50 = N*(3/4); %vertexList(c2,1);
 y50 = N/2; %vertexList(c2,2);
 
 %initialize starting point for tracking
-time = 1;
+time = 0;
 value1 = 1;
 value2 = 50;
 
@@ -63,11 +63,11 @@ cost2 = 0;
 
 %shiftI1 is for influenced agent, and shift I2 is for influencing agent and
 %company itself, for compnay I
-shift11 = 1;
-shift12 = 100;
+shift11 = 10;
+shift12 = 200;
 
-shift21 = 1;
-shift22 = 200;
+shift21 = 5;
+shift22 = 100;
 
 fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2];
 
@@ -197,6 +197,11 @@ for i = 1: simNum
             
         end
     end
+    
+    if ( flag == 0)
+        fnc = [fnc; [i, 0, 0, 0, 0, 0, 0]];
+    end
+
 
     if mod(i,100)==0
         %figure;
