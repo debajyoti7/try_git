@@ -25,13 +25,16 @@
 \contentsline {subsection}{\numberline {2.1.2}Orientation and View of the simulation environment}{4}{subsection.35}
 \contentsline {subsection}{\numberline {2.1.3}Simulation Approach}{5}{subsection.36}
 \contentsline {subsection}{\numberline {2.1.4}Presentation Approach}{5}{subsection.37}
-\contentsline {section}{\numberline {2.2}Tools}{6}{section.38}
-\contentsline {chapter}{\numberline {3}Methodology}{7}{chapter.39}
-\contentsline {section}{\numberline {3.1}The Companies}{7}{section.40}
-\contentsline {section}{\numberline {3.2}The Agents}{7}{section.41}
-\contentsline {section}{\numberline {3.3}connections}{8}{section.47}
-\contentsline {section}{\numberline {3.4}Algorithms}{8}{section.48}
-\contentsline {section}{\numberline {3.5}Definitions}{10}{section.92}
+\contentsline {subsection}{\numberline {2.1.5}Company Policies}{6}{subsection.39}
+\contentsline {section}{\numberline {2.2}Tools}{6}{section.40}
+\contentsline {chapter}{\numberline {3}Methodology}{7}{chapter.41}
+\contentsline {section}{\numberline {3.1}The Companies}{7}{section.42}
+\contentsline {section}{\numberline {3.2}The Agents}{7}{section.43}
+\contentsline {section}{\numberline {3.3}Connections}{8}{section.49}
+\contentsline {subsection}{\numberline {3.3.1}The World}{8}{subsection.50}
+\contentsline {subsection}{\numberline {3.3.2}The Simulation}{8}{subsection.51}
+\contentsline {section}{\numberline {3.4}Algorithms}{10}{section.55}
+\contentsline {section}{\numberline {3.5}Definitions}{12}{section.99}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{11}{appendix.99}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{13}{appendix.106}
 \vspace {2em}

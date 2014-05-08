@@ -63,7 +63,7 @@ cost2 = 0;
 
 %shiftI1 is for influenced agent, and shift I2 is for influencing agent and
 %company itself, for compnay I
-shift11 = 10;
+shift11 = 1;
 shift12 = 200;
 
 shift21 = 5;

@@ -24,7 +24,7 @@ The author decided to keep this model limited to two companies competing for the
 %-----------------------------------
 \section{The Agents}
 
-The agents in this model are simpler constructs, each  having a "color" attribute, and this attribute changes as the agents tend to believe in either of the companies.
+The agents in this model are simpler constructs, each  having a ``color" attribute, and this attribute changes as the agents tend to believe in either of the companies.
 
 Structurally, each agent has following attributes :
 
@@ -40,9 +40,51 @@ Structurally, each agent has following attributes :
 %	SECTION 3
 %-----------------------------------
 
-\section{connections}
+\section{Connections}
 The connections between the agents form in such a manner that the model satisfies the requirements of free-scaling. 
 Following in the footsteps of the giants, the implementation is based on the B-A algortithm [REF] .
+
+\subsection{The World}
+The model is first built based on 2 fixed parameters, and then the simulation runs on it.
+The author starts building the model for a fixed umber of total agents, and predefined average connectivity in the environment.
+The initialization of the model begins with the creation of a small, fully connected network, and then, with time, new agents are added to this network, and these agents form the connections following the rules of PA.
+The exact method for forming this connection was modified by the author, so as to further trick the environment and simulate scenarios of chances of connection being formed, but only a fraction of those connections actually being formed. This was achieved by employing a `weight' modifier on the probability of an agent to form a connection. This weight, in turn, is defined for every possible pair of agents, and is based on the difference in the value of a special attribute ``likemindedness", defined for each agent in an uniform, pseudo-random manner.
+This attribute is not considered an essential attribute because it may or may not be used, in various simulations. However, as an effect of using this modifier, the number of connections for an agent comes down considerably, while the nature of the connections still remain same, and the network remains scale free.
+
+
+\subsection{The Simulation} 
+ 
+The simulation begins with allocating ``influence" value to each agent, as a function of the number of connection it makes. This makes sure that the most-connected agents get a chance to be more influential. 
+After this, values are uniformly assigned to all agents for the ``color" attribute, and then they are seeded to belong to different companies. 20 \% was the value chosen by the author for initial amount of seeding, for the following combination of reasons:
+
+\begin{enumerate}
+\item It allows for equal amount of seeding in both companies.
+\item It allows for double amount of seeding in a neutral company.
+\item After above mentioned allocations, it leaves equal amount of distribution randomly, to simulate chance.
+\end{enumerate}
+
+The above rules give us the formula
+
+$company_1 + company_2 + company_{neutral} + company_{random} = 100$
+
+which translates as
+
+$x + x + 2x + x = 100 \%$
+
+and results in 
+
+$x = 20 \%$ .
+
+Then, we begin running the simulation, where in each time step, an edge is selected randomly, and an exchange could happen if the FromNode of this edge belongs to one of the two companies. Here, and from now onwards, ``belonging to company" refers to the value of the ``color" attribute for the agent.
+After this, the influence value of the FromNode is subjected to a randomly selected threshold, and upon satisfaction, the actual communication occurs.
+The selection of the edge depicts existence of a connection, while satisfaction of the threshold depicts the actual communication. This constraint was included to make the simulation model even closer to real-life.
+
+For every successful communication, the agents shift their ``color" attribute a fraction towards the influencing company. This shift also translates to their x-y coordinate, which is shown in the presentation. The important aspect here is that these changes in color and x-y coordinates, while not always causally related, are always correlated. 
+
+For the companies, however, it has different significance. Whenever an agent has moved closer, the companies also make an effort and move some fraction towards the agents. The amount of distance moved by the company represents the effort it makes, and is determined by the company policies. These movements also incurs the cost to the company, and a combined function of the gain and this cost determines the effectiveness of the policy.
+
+
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -111,10 +153,21 @@ Following in the footsteps of the giants, the implementation is based on the B-A
 
 \section{Definitions}
 \begin{enumerate}
-\item \emph{fully connected}
-\item \emph{likemindedness}
-\item \emph{weight}
-\item \emph{Company centre}
+\item \emph{Fully Connected}
+
+It follows the standard definition that each node is connected to every other node. The initial network is formed in a manner such that it is fully connected and satisfies the average number of total connections.
+
+\item \emph{Likemindedness}
+
+It is a special attribute of the agents, that is used in this model to modify the probability of formation of a new connection between two agents. It simulates the real life phenomenon that people with similar interests may be more likely to form a connection. This is also helpful in showing the aspect tht some people may be introverts or extroverts. However, that aspect is not simulated in detail in this model [REF].
+
+\item \emph{Weight}
+
+The weight is the difference in likemindedness of two agents. It is calculated as 
+
+$weight_{j,k} = abs( likemindedness{j} - likemindedness{k} )$
+
+\item \emph{Company Centre}
 \item \emph{influence}
 \item \emph{shift}
 \end{enumerate}

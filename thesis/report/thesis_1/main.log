@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.8)  7 MAY 2014 02:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.8)  8 MAY 2014 11:09
 entering extended mode
 **main.tex
 (D:\try_git\thesis\report\thesis_1\main.tex
@@ -884,27 +884,34 @@ Chapter 2.
 ------------------------------------------------------------------------------
 [4
 
-] [5]) (D:\try_git\thesis\report\thesis_1\Chapters/Chapter3.tex [6]
+] <Figures/10000_4_m1_100000.png, id=281, 825.0825pt x 294.34969pt>
+File: Figures/10000_4_m1_100000.png Graphic file (type png)
+
+<use Figures/10000_4_m1_100000.png>
+Package pdftex.def Info: Figures/10000_4_m1_100000.png used on input line 62.
+(pdftex.def)             Requested size: 412.54024pt x 147.17447pt.
+ [5 <D:/try_git/thesis/report/thesis_1/Figures/10000_4_m1_100000.png>])
+(D:\try_git\thesis\report\thesis_1\Chapters/Chapter3.tex [6]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Methodology
 ------------------------------------------------------------------------------
 [7
 
-]
+] [8]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 54.
- [8] [9
+put line 96.
+ [9] [10] [11
 
-]) (D:\try_git\thesis\report\thesis_1\Appendices/AppendixA.tex
-[10
+])
+(D:\try_git\thesis\report\thesis_1\Appendices/AppendixA.tex [12
 
 ]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-) [11
+) [13
 
 ]
 ------------------------------------------------------------------------------
@@ -917,17 +924,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4C14EE92B4A0EE1AB3515627B3E410B3;4805.
+(rerunfilecheck)             Checksum: 79BECDF2E7E5DEE8E98906F7DB132663;5286.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 302.
  ) 
 Here is how much of TeX's memory you used:
- 13335 strings out of 493921
- 186158 string characters out of 3147271
- 254422 words of memory out of 3000000
- 16304 multiletter control sequences out of 15000+200000
- 14960 words of font info for 54 fonts, out of 3000000 for 9000
+ 13357 strings out of 493921
+ 186523 string characters out of 3147271
+ 256473 words of memory out of 3000000
+ 16314 multiletter control sequences out of 15000+200000
+ 15261 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,12n,45p,815b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,11n,45p,815b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
@@ -941,9 +948,9 @@ e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (24 pages, 249222 bytes).
+Output written on main.pdf (26 pages, 274049 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 

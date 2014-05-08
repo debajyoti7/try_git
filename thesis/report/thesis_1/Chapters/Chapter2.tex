@@ -20,12 +20,12 @@
 It was an obvious choice to select scale-free topologies for modeling the network structure.  But B-A model also proposes variants of the scale free structure depending on it's characteristics. These characteristics are : 
 
 \begin{enumerate}
-\item Continuous Growth 
+\item Continuous Growth (CG)
 
 This states that the network grows continuously. i.e., at all times, new nodes are being attached to the the network.
 
 
-\item Preferential Atachment
+\item Preferential Atachment (PA)
 
 This states the rule any node should follow while making connections. It states that the most connected nodes are most likely candidates to form a connection with.
 
@@ -57,14 +57,27 @@ As a limiting case, the author decided to simulate only two companies. This limi
 %-----------------------------------
 
 \subsection{Presentation Approach}
+
+\begin{figure}
+\includegraphics[scale=0.5]{Figures/10000_4_m1_100000}
+\caption{Color Clusters}
+\label{fig:color_clusters}
+\end{figure}
+
+
 Like for any project with a large number of agents, a clear and easy to understand presentation of the simulation was imperative.
-Initially the author went with 2-D histograms depicting the membership values of each color group, which presented nicely how the members moved around as the height of the  bars representing the number of members in a group could be easily seen to rise or fall, and the speed of this descent or ascent would tell about the rat of success or failure for a particular color.
+Initially the author went with 2-D histograms depicting the membership values of each color group, which presented nicely how the members moved around as the height of the  bars representing the number of members in a group could be easily seen to rise or fall, and the speed of this descent or ascent would tell about the rat of success or failure for a particular color. An example could be seen in figure~\ref{fig:color_clusters}.
+
 
 However, with the progress of the model this model became obsolete as it was unable to represent the aspect of ``Cost" to a company. 
 To address this necessity, the author decided to switch to a 3-Dimensional presentation, with X- and Y- axes representing generic movement for agents, and the movement or effort as well as incurred cost for the companies, ad the color, being the 3-rd dimension of the presentation, depicting the value of the attribute. The speed of movement here serves the purpose as the speed of rise/fall in the previous model.
 
 While the X-Y movement in this model, for the agents, is a correlation, the changing colors as they move represent the agents leaning towards or away from a particular company.
 
+%-----------------------------------
+%	SUBSECTION 5
+%-----------------------------------
+\subsection{Company Policies}
 
 
 %-----------------------------------
