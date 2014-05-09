@@ -168,6 +168,17 @@ The weight is the difference in likemindedness of two agents. It is calculated a
 $weight_{j,k} = abs( likemindedness{j} - likemindedness{k} )$
 
 \item \emph{Company Centre}
-\item \emph{influence}
-\item \emph{shift}
+
+The company is not implemented as a structural entity, rather, the company centre is used to keep track of the attitude of the agents towards the company, and also to track the effort and cost on the part of the company.
+
+\item \emph{Influence}
+
+This attribute determines the chances of an agent to influence another agent. As in real life, we allow more connected agents a chance to be more influential, but ultimately, there is no deterministic end to the model, and whether or not an actual comunication takes place and an agent gets influenced is always determined by a randomly determined threshold.
+
+\item \emph{Shift}
+
+This shift represents a change in the state of the overall system. For an agent, a shift in it's color attribute represents the agent leaning towards a company. This shift is correlated with the same ratio of change in the agent's x-y coordinate, used for visualization purposes.
+For a company, the shift only occurs in it's x-y coordinate, which is caused by the x-y shift of the agent, and this change represents two things : 
+\subitem[A] The speed and frequency of movement represent the effort taken by the company
+\subitem[B] The distance moved represent the cost incurred to the company
 \end{enumerate}
