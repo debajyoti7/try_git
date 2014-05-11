@@ -63,11 +63,11 @@ cost2 = 0;
 
 %shiftI1 is for influenced agent, and shift I2 is for influencing agent and
 %company itself, for compnay I
-shift11 = 100/99;
-shift12 = 100;
+shift11 = 5;
+shift12 = 80;
 
-shift21 = 100/50;
-shift22 = 100;
+shift21 = 5;
+shift22 = 40;
 
 fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2];
 
@@ -104,24 +104,19 @@ for i = 1: simNum
     influencedAgent = edgeList(pick,3);
     flag = 0;
     
-%     if (colorList(influencingAgent) == value1)
-%         x = x1;
-%         y = y1;
-%         shiftFactorA = shift11;
-%         shiftFactorB = shift12;
-%     else 
-%         if ((colorList(influencingAgent)) == value2)
-%             x = x50;
-%             y = y50;
-%             shiftFactorA = shift21;
-%             shiftFactorB = shift22;
-%         end
-%     end
+    if (colorList(influencingAgent) == value1)
+        effort = 1/shift12;
+    else 
+        if ((colorList(influencingAgent)) == value2)
+            effort = 1/shift22;
+        end
+    end
     
     %dist = abs(beliefList(edgeList(pick,3)) - beliefList(edgeList(pick,2)));
     dist = beliefList(influencingAgent);
     if ((colorList(influencingAgent) == value1) || (colorList(influencingAgent) == value2))
         thresh = rand(1);
+        thresh = thresh - effort; % more effort leads to lower threshold.
         if (dist >= thresh)
             
             
@@ -173,7 +168,7 @@ for i = 1: simNum
             time = i;
             
             if (colorList(influencingAgent) == value1)
-                spread1count = spread1count + 1;
+                spread1count = spread1count + 1; %/shiftFactorA;
                 cost1 = cost1 + (1/shiftFactorB);
                 x1 = x;
                 y1 = y;
@@ -181,7 +176,7 @@ for i = 1: simNum
                     shift12 = shift12/2; %not affecting shift11 and shift21 for now
                 end
             else
-                spread2count = spread2count + 1;
+                spread2count = spread2count + 1; %/shiftFactorA;
                 cost2 = cost2 + (1/shiftFactorB);
                 x50 = x;
                 y50 = y;
