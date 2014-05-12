@@ -28,7 +28,21 @@ This states that the network grows continuously. i.e., at all times, new nodes a
 \item Preferential Atachment (PA)
 
 This states the rule any node should follow while making connections. It states that the most connected nodes are most likely candidates to form a connection with.
+The connections are formed according to the probaility which is calculated as :
 
+\begin{math}
+ p_i = \frac{k_i}{\sum_{j=1}^{N} k_j} 
+\label{form:PA}
+\end{math}
+
+where, 
+
+\begin{enumerate}
+\item p : probability 
+\item k : number of connections 
+\item i : agent id 
+\item N : total number of agents 
+\end{enumerate}
 
 \end{enumerate} 
 
@@ -68,9 +82,15 @@ As a limiting case, the author decided to simulate only two companies. This limi
 Like for any project with a large number of agents, a clear and easy to understand presentation of the simulation was imperative.
 Initially the author went with 2-D histograms depicting the membership values of each color group, which presented nicely how the members moved around as the height of the  bars representing the number of members in a group could be easily seen to rise or fall, and the speed of this descent or ascent would tell about the rat of success or failure for a particular color. An example could be seen in figure~\ref{fig:color_clusters}.
 
+\begin{figure}
+\includegraphics[scale=0.5]{Figures/spatial}
+\caption{3-D Spatial Cluster}
+\label{fig:spatial_clusters}
+\end{figure}
+
 
 However, with the progress of the model this model became obsolete as it was unable to represent the aspect of ``Cost" to a company. 
-To address this necessity, the author decided to switch to a 3-Dimensional presentation, with X- and Y- axes representing generic movement for agents, and the movement or effort as well as incurred cost for the companies, ad the color, being the 3-rd dimension of the presentation, depicting the value of the attribute. The speed of movement here serves the purpose as the speed of rise/fall in the previous model.
+To address this necessity, the author decided to switch to a 3-Dimensional presentation, with X- and Y- axes representing generic movement for agents, and the movement or effort as well as incurred cost for the companies, ad the color, being the 3-rd dimension of the presentation, depicting the value of the attribute. The speed of movement here serves the purpose as the speed of rise/fall in the previous model. An example of this is figure ~\ref{fig:spatial_clusters}.
 
 While the X-Y movement in this model, for the agents, is a correlation, the changing colors as they move represent the agents leaning towards or away from a particular company.
 

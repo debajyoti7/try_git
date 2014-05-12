@@ -42,7 +42,7 @@ Structurally, each agent has following attributes :
 
 \section{Connections}
 The connections between the agents form in such a manner that the model satisfies the requirements of free-scaling. 
-Following in the footsteps of the giants, the implementation is based on the B-A algortithm [REF] .
+Following in the footsteps of the giants, the implementation is based on the B-A algortithm ~\ref{ag1} .
 
 \subsection{The World}
 The model is first built based on 2 fixed parameters, and then the simulation runs on it.
@@ -75,9 +75,11 @@ and results in
 
 $x = 20 \%$ .
 
-Then, we begin running the simulation, where in each time step, an edge is selected randomly, and an exchange could happen if the FromNode of this edge belongs to one of the two companies. Here, and from now onwards, ``belonging to company" refers to the value of the ``color" attribute for the agent.
-After this, the influence value of the FromNode is subjected to a randomly selected threshold, and upon satisfaction, the actual communication occurs.
-The selection of the edge depicts existence of a connection, while satisfaction of the threshold depicts the actual communication. This constraint was included to make the simulation model even closer to real-life.
+Then, the simulation is run, where in each time step, an edge is selected randomly, and an exchange could happen if the FromNode of this edge belongs to one of the two companies. Here, ``belonging to company" refers to the value of the ``color" attribute for the agent.
+After this, the influence value of the FromNode is subjected to a randomly selected threshold, and upon satisfaction, the actual communication occurs. The threshold is lowered depending on a company's efforts towards attracting the customer. 
+
+The selection of the edge depicts existence of a connection, while satisfaction of the threshold depicts the actual communication. This constraint was included to make the simulation model even closer to real-life. 
+Hence, a higher effort would result in more cost, but would give a company more chances of a successful communication.
 
 For every successful communication, the agents shift their ``color" attribute a fraction towards the influencing company. This shift also translates to their x-y coordinate, which is shown in the presentation. The important aspect here is that these changes in color and x-y coordinates, while not always causally related, are always correlated. 
 
