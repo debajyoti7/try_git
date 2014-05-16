@@ -30,10 +30,11 @@ This states that the network grows continuously. i.e., at all times, new nodes a
 This states the rule any node should follow while making connections. It states that the most connected nodes are most likely candidates to form a connection with.
 The connections are formed according to the probaility which is calculated as :
 
-\begin{math}
+\begin{eqnarray}
  p_i = \frac{k_i}{\sum_{j=1}^{N} k_j} 
-\label{form:PA}
-\end{math}
+\label{eqn:PA}
+\end{eqnarray}
+
 
 where, 
 
@@ -46,7 +47,7 @@ where,
 
 \end{enumerate} 
 
-Now, a scale free network may exhibit either or both of above characteristics. However, the author decided to include both in his model as to make it as close to real life as possible. 
+Now, a scale free network may exhibit either or both of above characteristics. However, the author decided to include both attributes in his model to make it as close to real life as possible. 
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -61,9 +62,8 @@ Also, focusing on the connections was easier as the whole network could be minim
 %	SUBSECTION 3
 %-----------------------------------
 
-\subsection{Simulation Approach}
-
-The attribute \emph{color} was chosen for the simulation as it is easy to understand and visualise, and let's us present the effect in a 2-dimensional model where clustering is not directly dependent on the axial values. 
+\subsection{The Model}
+The author decided to focus on a competitive diffusion where the companies compete over a single attribute of the agent. The attribute \emph{color} was chosen for the simulation as it is easy to understand and visualise, and let's us present the effect in a 2-dimensional model where clustering is not directly dependent on the axial values. 
 As a limiting case, the author decided to simulate only two companies. This limits the scope as it does not give much insight into cases where two companies might collaborate for mutual benefit, like to win against a third rival company.
 
 %-----------------------------------
@@ -73,7 +73,7 @@ As a limiting case, the author decided to simulate only two companies. This limi
 \subsection{Presentation Approach}
 
 \begin{figure}
-\includegraphics[scale=0.5]{Figures/10000_4_m1_100000}
+\includegraphics[scale=1]{Figures/1000_agents_color_cluster}
 \caption{Color Clusters}
 \label{fig:color_clusters}
 \end{figure}
@@ -87,6 +87,7 @@ Initially the author went with 2-D histograms depicting the membership values of
 \caption{3-D Spatial Cluster}
 \label{fig:spatial_clusters}
 \end{figure}
+
 
 
 However, with the progress of the model this model became obsolete as it was unable to represent the aspect of ``Cost" to a company. 
@@ -133,18 +134,32 @@ The model witnesses three types of potential interactions :
 \begin{enumerate}
 \item[1] Company to Agent interaction 
 
-These interactions are predefined, in a sense that a certain number of agents already seeded to believe in a company at the beginning of the simulation. this is explained further in Chapter ~\ref{Chapter3}.
+These interactions are predefined, in a sense that a certain number of agents already seeded to believe in a company at the beginning of the simulation. This is explained further in Chapter ~\ref{Chapter3}.
 
 \item[2] Agent to Agent interactions
 
-These interactions are how one agent influences another to lean towards a company. In this model, the agents belonging to either of the companies in question are influencing agents, and the others are influenced. This is also similar to real life as the connections betweens agents are directional.
+These interactions are the means by which one agent may influences another to lean towards a company. In this model, the agents belonging to either of the companies in question are referred to as  \emph{influencing agents}, and the others are referred to as \emph{influenced agents}. This also mimics real life as the connections betweens agents are directional.
 
 \item[3] Agent to Company interactions
 
-Whenever an agent is influenced, during the simulation, this also causes the company to make some effort, depending on its policies. These interactions are what cause the cost to the company.
+Whenever an agent is influenced, during the simulation, this also causes the company to make some effort, the amount of which depends on its policies. These interactions are what cause the cost to the company.
 
 
 \end{enumerate}
+
+The outcome of these interactions are measured by the following two values
+
+\begin{enumerate}
+\item[a] Gain
+
+This refers to a success for a company in influencing an agent to lean towards itself.
+
+\item[b] Cost
+
+This refers to the cost incurred to the company and is a fucntion of the effort taken by the company. It depends on the policy being followed by the company.
+\end{enumerate}
+	
+
 
 
 
@@ -157,4 +172,4 @@ Whenever an agent is influenced, during the simulation, this also causes the com
 As a requirement from the University, Matlab was chosen as the programming language, and no special toolboxes were used.
 The curve fitting app was used occasionally to check the output of the simulation.
 
-The custom formulas used by the author were sometimes first tested as a prototype in Python with NetworkX and Mathematica for mathematical validation. However, any of those implementations do not directly contribute to the result.
+The formulas, and variants thereof, used by the author were sometimes first tested as a prototype in Python with NetworkX and Mathematica for mathematical validation. However, any of those implementations do not directly contribute to the result.

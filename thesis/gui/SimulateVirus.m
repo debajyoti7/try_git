@@ -64,21 +64,21 @@ cost2 = 0;
 %shiftI1 is for influenced agent, and shift I2 is for influencing agent and
 %company itself, for compnay I
 shift11 = 5;
-shift12 = 80;
+shift12 = 100;
 
 shift21 = 5;
-shift22 = 40;
+shift22 = 50;
 
 fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2];
 
 pause on
 
-%{
-[n,xout] = hist(colorList);
-h = bar(xout,n);
-pause(3)
-set(h,'XDataSource','xout','YDataSource','n');
-%}
+%color histograms
+% [n,xout] = hist(colorList);
+% h = bar(xout,n);
+% pause(3)
+% set(h,'XDataSource','xout','YDataSource','n');
+
 
 figure;
 s = 10;
@@ -117,6 +117,9 @@ for i = 1: simNum
     if ((colorList(influencingAgent) == value1) || (colorList(influencingAgent) == value2))
         thresh = rand(1);
         thresh = thresh - effort; % more effort leads to lower threshold.
+        if(thresh < 0)
+            thresh = rand(1);
+        end
         if (dist >= thresh)
             
             

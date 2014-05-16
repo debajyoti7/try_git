@@ -1,8 +1,8 @@
-function [ g1,g2,c1,c2 ] = LoadVar( name )
+function [ g1,g2,c1,c2,f1,f2 ] = LoadVar( name )
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
-cd('D:\try_git\thesis\gui\output\data');
+cd('D:\try_git\thesis\gui\output\data\base');
 y = load(name,'fnc');
 v = y.fnc();
 
@@ -12,4 +12,14 @@ g1 = v(:,4);
 c1 = v(:,6);
 g2 = v(:,5);
 c2 = v(:,7);
+f1 = g1 - c1;
+f2 = g2 - c2;
+cd('D:\try_git\thesis\gui\output\data\fig\run1');
+fname = strcat('f2 - f1_',name,'.png');
+h2 = plot(f2-f1,'DisplayName','f2 - f1');
+h2leg1 = legend('f2 - f1');
+saveas(h2,fname);
+
+
+
 end

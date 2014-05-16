@@ -10,32 +10,36 @@
 \contentsline {chapter}{Abbreviations}{ix}{dummy.10}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.13}
-\contentsline {section}{\numberline {1.1}State of the Art}{1}{section.14}
-\contentsline {subsection}{\numberline {1.1.1}State of the art in networked devices}{1}{subsection.15}
-\contentsline {subsection}{\numberline {1.1.2}Examples of State of the Art networked devices }{2}{subsection.16}
-\contentsline {section}{\numberline {1.2}Motivation}{2}{section.20}
-\contentsline {subsection}{\numberline {1.2.1}Why Scale-Free Networks}{2}{subsection.21}
-\contentsline {subsection}{\numberline {1.2.2}Human to Human}{3}{subsection.22}
-\contentsline {subsection}{\numberline {1.2.3}Future Sight}{3}{subsection.23}
-\contentsline {section}{\numberline {1.3}Aim}{3}{section.24}
-\contentsline {chapter}{\numberline {2}Approach and Tools}{4}{chapter.25}
-\contentsline {section}{\numberline {2.1}Approach}{4}{section.26}
-\contentsline {subsection}{\numberline {2.1.1}Network Model}{4}{subsection.27}
-\contentsline {subsection}{\numberline {2.1.2}Orientation and View of the simulation environment}{5}{subsection.34}
-\contentsline {subsection}{\numberline {2.1.3}Simulation Approach}{5}{subsection.35}
-\contentsline {subsection}{\numberline {2.1.4}Presentation Approach}{5}{subsection.36}
-\contentsline {subsection}{\numberline {2.1.5}Company Policies}{6}{subsection.39}
-\contentsline {subsection}{\numberline {2.1.6}Simulation Approach}{7}{subsection.40}
-\contentsline {section}{\numberline {2.2}Tools}{8}{section.41}
-\contentsline {chapter}{\numberline {3}Methodology}{9}{chapter.42}
-\contentsline {section}{\numberline {3.1}The Companies}{9}{section.43}
-\contentsline {section}{\numberline {3.2}The Agents}{9}{section.44}
-\contentsline {section}{\numberline {3.3}Connections}{10}{section.50}
-\contentsline {subsection}{\numberline {3.3.1}The World}{10}{subsection.51}
-\contentsline {subsection}{\numberline {3.3.2}The Simulation}{10}{subsection.52}
-\contentsline {section}{\numberline {3.4}Algorithms}{12}{section.56}
-\contentsline {section}{\numberline {3.5}Definitions}{14}{section.100}
+\contentsline {section}{\numberline {1.1}Networks}{1}{section.14}
+\contentsline {subsection}{\numberline {1.1.1}Computer Networks}{1}{subsection.15}
+\contentsline {subsection}{\numberline {1.1.2}Social Networks}{1}{subsection.16}
+\contentsline {subsection}{\numberline {1.1.3}Scale-Free Networks}{1}{subsection.17}
+\contentsline {section}{\numberline {1.2}State of the Art}{2}{section.19}
+\contentsline {subsection}{\numberline {1.2.1}State of the art in networked devices}{2}{subsection.20}
+\contentsline {subsection}{\numberline {1.2.2}Examples of State of the Art networked devices }{2}{subsection.21}
+\contentsline {section}{\numberline {1.3}Motivation}{3}{section.25}
+\contentsline {subsection}{\numberline {1.3.1}Why Scale-Free Networks}{3}{subsection.26}
+\contentsline {subsection}{\numberline {1.3.2}Human to Human}{4}{subsection.27}
+\contentsline {subsection}{\numberline {1.3.3}Future Sight}{4}{subsection.28}
+\contentsline {section}{\numberline {1.4}Aim}{4}{section.29}
+\contentsline {chapter}{\numberline {2}Approach and Tools}{5}{chapter.30}
+\contentsline {section}{\numberline {2.1}Approach}{5}{section.31}
+\contentsline {subsection}{\numberline {2.1.1}Network Model}{5}{subsection.32}
+\contentsline {subsection}{\numberline {2.1.2}Orientation and View of the simulation environment}{6}{subsection.40}
+\contentsline {subsection}{\numberline {2.1.3}The Model}{6}{subsection.41}
+\contentsline {subsection}{\numberline {2.1.4}Presentation Approach}{6}{subsection.42}
+\contentsline {subsection}{\numberline {2.1.5}Company Policies}{8}{subsection.45}
+\contentsline {subsection}{\numberline {2.1.6}Simulation Approach}{9}{subsection.46}
+\contentsline {section}{\numberline {2.2}Tools}{9}{section.47}
+\contentsline {chapter}{\numberline {3}Methodology}{11}{chapter.48}
+\contentsline {section}{\numberline {3.1}The Companies}{11}{section.49}
+\contentsline {section}{\numberline {3.2}The Agents}{11}{section.50}
+\contentsline {section}{\numberline {3.3}Connections}{12}{section.56}
+\contentsline {subsection}{\numberline {3.3.1}The World}{12}{subsection.57}
+\contentsline {subsection}{\numberline {3.3.2}The Simulation}{13}{subsection.58}
+\contentsline {section}{\numberline {3.4}Definitions}{14}{section.63}
+\contentsline {section}{\numberline {3.5}Algorithms}{16}{section.72}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{16}{appendix.107}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{18}{appendix.118}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{17}{dummy.108}
+\contentsline {chapter}{Bibliography}{19}{dummy.119}
