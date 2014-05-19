@@ -17,6 +17,7 @@
 %	SUBSECTION 1
 %-----------------------------------
 \subsection{Network Model}
+\label{sec:model}
 It was an obvious choice to select scale-free topologies for modeling the network structure.  But B-A model also proposes variants of the scale free structure depending on it's characteristics. These characteristics are : 
 
 \begin{enumerate}
@@ -26,7 +27,6 @@ This states that the network grows continuously. i.e., at all times, new nodes a
 
 
 \item Preferential Atachment (PA)
-
 This states the rule any node should follow while making connections. It states that the most connected nodes are most likely candidates to form a connection with.
 The connections are formed according to the probaility which is calculated as :
 
@@ -66,11 +66,15 @@ Also, focusing on the connections was easier as the whole network could be minim
 The author decided to focus on a competitive diffusion where the companies compete over a single attribute of the agent. The attribute \emph{color} was chosen for the simulation as it is easy to understand and visualise, and let's us present the effect in a 2-dimensional model where clustering is not directly dependent on the axial values. 
 As a limiting case, the author decided to simulate only two companies. This limits the scope as it does not give much insight into cases where two companies might collaborate for mutual benefit, like to win against a third rival company.
 
+The model makes use of random functions wherever applicable, and uses this to simulate the effect of `chance'. This inherent randomness makes the system non-deterministic and more reliable.
+
+
 %-----------------------------------
 %	SUBSECTION 4
 %-----------------------------------
 
 \subsection{Presentation Approach}
+\label{sec:presentaion}
 
 \begin{figure}
 \includegraphics[scale=1]{Figures/1000_agents_color_cluster}
@@ -99,7 +103,7 @@ While the X-Y movement in this model, for the agents, is a correlation, the chan
 %	SUBSECTION 5
 %-----------------------------------
 \subsection{Company Policies}
-
+\label{sec:policies}
 Different companies may have different policies towards customer involvement. 
 
 The customer involvement continuum followed by the author is influenced by the works of Bodil Sanden~\cite{bodil} and follow the categorization by Ives \& Olson ~\cite{1984}.

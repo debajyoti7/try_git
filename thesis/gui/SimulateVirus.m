@@ -74,10 +74,10 @@ fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2]
 pause on
 
 %color histograms
-% [n,xout] = hist(colorList);
-% h = bar(xout,n);
-% pause(3)
-% set(h,'XDataSource','xout','YDataSource','n');
+ [n,xout] = hist(colorList);
+ h = bar(xout,n);
+ pause(3)
+ set(h,'XDataSource','xout','YDataSource','n');
 
 
 figure;

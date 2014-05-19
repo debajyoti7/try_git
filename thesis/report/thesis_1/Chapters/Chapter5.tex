@@ -10,28 +10,51 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Main Section 1}
+\section{The Model}
+The model shows us a fast and easy way to generate a scale-free network, and the effects of using the constraint of `likemindedness', defined in chapter~\ref{Chapter3} section~\ref{sec:definitions}, between the agents, which reduces the number of connections formed significantly, but the network still follows power law.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\subsection{Subsection 1}
-
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
-
-%-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
-
-\subsection{Subsection 2}
-Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
+Although this thesis is focused on companies, the modularity of the project allows the algorithm~\ref{alg1} to be used for generic simulation of social structures.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\section{Main Section 2}
+\section{The Simulation}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+The initial results for diffusion in a scale-free network present a picture where it is clear that the spread, whether it is increase or decrease, tends to be exponential. 
+
+The simulation results presented in chapter~\ref{Chapter4} section~\ref{sec:cost_gain} give a varied picture. They are divided in two groups.
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Base Group}
+
+This group focuses on analysis while cost is same for both companies, and helps the observer to understand the basic nature of the companies. 
+
+The base group analyses shows that company2 seems to emerge victor for overall simulation, however, the nature is unstable for shorter runs, i.e., during the initial time steps of the simulations.
+
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Difference Group}
+
+This group focuses on analysis while cost is different for both companies, and allows for analysis of the different policies.
+
+The author focused on two types of policies described in chapter~\ref{Chapter2} section~\ref{sec:policies}. Specifically, the chosen policies were :
+
+\begin{enumerate}
+\item[Company1 :] Symbolic involvement. User input is requested but ignored.
+\item[Company2 :] Involvement by doing. A user as design team member or as the official liaison with the information system’s development group.
+\end{enumerate}
+
+
+Company1 maintained a minimal involvement of customers in decision making, and made very little effort. This made sure that the company did not take a very high cost. 
+
+Company2 had a more open policy where customers were highly involved, and the company made a lot of efforts to reach out. This resulted in formation of long-lasting relations which led to profit in the long run.
+
+The analyses show that company1, with its minimal inclusion policy, is more effective for short-term projects, when it makes less efforts towards the customers. The policy followed by Company2 is less profitable during this phase, but it starts to pay-off afterwards and becomes more profitable than Company1.
+
+The exact shift point for this change is case dependant, and it varies with the value of gain, and costs. But this model could be further developed to prepare prediction system that helps companies to switch between policies in order to maximize their cost-benefit ratio.

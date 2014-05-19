@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -99,19 +99,19 @@ Swarmanoid.
 
 \bibitem[Weisstein({\natexlab{a}})]{konigsberg}
 Eric~W. Weisstein.
-\newblock "königsberg bridge problem." from mathworld--a wolfram web
+\newblock ``königsberg bridge problem." from mathworld--a wolfram web
   resource., {\natexlab{a}}.
 \newblock URL \url{http://mathworld.wolfram.com/KoenigsbergBridgeProblem.html}.
 
 \bibitem[Weisstein({\natexlab{b}})]{traveling}
 Eric~W. Weisstein.
-\newblock "traveling salesman problem." from mathworld--a wolfram web
+\newblock ``traveling salesman problem." from mathworld--a wolfram web
   resource., {\natexlab{b}}.
 \newblock URL \url{http://mathworld.wolfram.com/TravelingSalesmanProblem.html}.
 
 \bibitem[Weisstein({\natexlab{c}})]{graph}
 Eric~W. Weisstein.
-\newblock "vertex coloring." from mathworld--a wolfram web resource.,
+\newblock ``vertex coloring." from mathworld--a wolfram web resource.,
   {\natexlab{c}}.
 \newblock URL \url{http://mathworld.wolfram.com/VertexColoring.html}.
 
@@ -138,12 +138,24 @@ Blake Ives and Margrethe~H. Olson.
 
 \bibitem[Jung(1921)]{jung1921question}
 C.G. Jung.
-\newblock \emph{The question of the therapeutic value of "abreaction"}.
+\newblock \emph{The question of the therapeutic value of ``abreaction"}.
 \newblock 1921.
 \newblock URL \url{http://books.google.ca/books?id=BJo1cgAACAAJ}.
 
 \bibitem[Wilt and Revelle(2008)]{Wilt08extraversion}
 Joshua Wilt and William Revelle.
 \newblock Extraversion, 2008.
+
+\bibitem[Pegg()]{smallWorld}
+Ed~Jr. Pegg.
+\newblock ``small world network." from mathworld--a wolfram web resource.
+\newblock URL \url{http://mathworld.wolfram.com/SmallWorldNetwork.html}.
+
+\bibitem[Cohen and Havlin(2003)]{PhysRevLett.90.058701}
+Reuven Cohen and Shlomo Havlin.
+\newblock Scale-free networks are ultrasmall.
+\newblock \emph{Phys. Rev. Lett.}, 90:\penalty0 058701, Feb 2003.
+\newblock \doi{10.1103/PhysRevLett.90.058701}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevLett.90.058701}.
 
 \end{thebibliography}

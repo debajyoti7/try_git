@@ -55,6 +55,24 @@ The exact method for forming this connection was modified by the author, so as t
 This attribute is not considered an essential attribute because it may or may not be used, in various simulations. However, as an effect of using this modifier, the number of connections for an agent comes down considerably, while the nature of the connections still remain same, and the network remains scale free.
 
 
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.75]{Figures/network_init}
+\end{center}
+\caption{Sample of Initial network with 10 nodes}
+\label{fig:network_init}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{Figures/network_final}
+\end{center}
+\caption{Sample of Final network with 50 nodes}
+\label{fig:network_final}
+\end{figure}
+
+The concept of starting with a smaller network and growing it is explained in details in Chapter~\ref{Chapter2} in section~\ref{sec:model} and examples are shown in figures~\ref{fig:network_init} and ~\ref{fig:network_final}.
+
 \subsection{The Simulation} 
  
 The simulation begins with allocating ``influence" value to each agent, as a function of the number of connection it makes. This makes sure that the most-connected agents get a chance to be more influential. 
@@ -87,12 +105,21 @@ For the companies, however, it has different significance. Whenever an agent has
 
 Towards the end of the campainging, a company may increase their effort to maximise chances of gain. This is achieved in the model by doubling the shift amount whenever a certain amount has been spent on the campaigning.
 
+
+In the end, the gain and cost are calulated for the companies using the equation~\ref{eqn:cost_gain}. Since cost is already lesser than the gain, this function was kept linear.
+
+\begin{eqnarray}
+function = gain - cost \\
+\label{eqn:cost_gain}
+\end{eqnarray}
+
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 
 
 \section{Definitions}
+\label{sec:definitions}
 \begin{enumerate}
 \item \emph{Fully Connected}
 
@@ -144,7 +171,7 @@ For a company, the shift only occurs in it's x-y coordinate, which is caused by 
 
 \begin{algorithm}
 \caption{Create Scale-Free Network}
-\label{ag1}
+\label{alg1}
 \begin{algorithmic}
 \STATE N : Input, total number of agents
 \STATE D : Input, average number of connections

@@ -36,18 +36,29 @@
 \contentsline {section}{\numberline {3.2}The Agents}{11}{section.50}
 \contentsline {section}{\numberline {3.3}Connections}{12}{section.56}
 \contentsline {subsection}{\numberline {3.3.1}The World}{12}{subsection.57}
-\contentsline {subsection}{\numberline {3.3.2}The Simulation}{13}{subsection.58}
-\contentsline {section}{\numberline {3.4}Definitions}{14}{section.63}
-\contentsline {section}{\numberline {3.5}Algorithms}{16}{section.72}
-\contentsline {chapter}{\numberline {4}Experimental Results}{18}{chapter.118}
-\contentsline {section}{\numberline {4.1}The Model}{18}{section.119}
-\contentsline {subsection}{\numberline {4.1.1}Small-World Networks}{18}{subsection.120}
-\contentsline {subsection}{\numberline {4.1.2}Scale-free Networks}{18}{subsection.121}
-\contentsline {section}{\numberline {4.2}The Simulation}{18}{section.122}
-\contentsline {subsection}{\numberline {4.2.1}Color Histograms}{18}{subsection.123}
-\contentsline {subsection}{\numberline {4.2.2}Spatial Cluster}{18}{subsection.124}
-\contentsline {subsection}{\numberline {4.2.3}Cost-Gain Function}{18}{subsection.125}
+\contentsline {subsection}{\numberline {3.3.2}The Simulation}{14}{subsection.60}
+\contentsline {section}{\numberline {3.4}Definitions}{15}{section.66}
+\contentsline {section}{\numberline {3.5}Algorithms}{17}{section.75}
+\contentsline {chapter}{\numberline {4}Experimental Results}{19}{chapter.121}
+\contentsline {section}{\numberline {4.1}The Model}{19}{section.122}
+\contentsline {subsection}{\numberline {4.1.1}Small-World Networks}{20}{subsection.125}
+\contentsline {subsection}{\numberline {4.1.2}Scale-free Networks}{20}{subsection.126}
+\contentsline {section}{\numberline {4.2}The Simulation}{22}{section.130}
+\contentsline {subsection}{\numberline {4.2.1}Color Histograms}{23}{subsection.132}
+\contentsline {subsection}{\numberline {4.2.2}Spatial Cluster}{23}{subsection.135}
+\contentsline {subsection}{\numberline {4.2.3}Cost-Gain Function}{24}{subsection.138}
+\contentsline {chapter}{\numberline {5}Significance of Results}{32}{chapter.151}
+\contentsline {section}{\numberline {5.1}The Model}{32}{section.152}
+\contentsline {section}{\numberline {5.2}The Simulation}{32}{section.153}
+\contentsline {subsection}{\numberline {5.2.1}Base Group}{32}{subsection.154}
+\contentsline {subsection}{\numberline {5.2.2}Difference Group}{33}{subsection.155}
+\contentsline {chapter}{\numberline {6}Extending the Analysis}{34}{chapter.156}
+\contentsline {section}{\numberline {6.1}Extending the analysis to more companies}{34}{section.157}
+\contentsline {section}{\numberline {6.2}Extending the analysis to more attributes}{34}{section.158}
+\contentsline {section}{\numberline {6.3}Extending the analysis to collaborative diffusion over single attribute or multiple attributes}{34}{section.159}
+\contentsline {section}{\numberline {6.4}Extending to Other Systems}{35}{section.160}
+\contentsline {chapter}{\numberline {7}Summary and Conclusion}{36}{chapter.161}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{24}{appendix.136}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{37}{appendix.162}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{25}{dummy.137}
+\contentsline {chapter}{Bibliography}{38}{dummy.163}
