@@ -39,7 +39,15 @@
 \contentsline {subsection}{\numberline {3.3.2}The Simulation}{13}{subsection.58}
 \contentsline {section}{\numberline {3.4}Definitions}{14}{section.63}
 \contentsline {section}{\numberline {3.5}Algorithms}{16}{section.72}
+\contentsline {chapter}{\numberline {4}Experimental Results}{18}{chapter.118}
+\contentsline {section}{\numberline {4.1}The Model}{18}{section.119}
+\contentsline {subsection}{\numberline {4.1.1}Small-World Networks}{18}{subsection.120}
+\contentsline {subsection}{\numberline {4.1.2}Scale-free Networks}{18}{subsection.121}
+\contentsline {section}{\numberline {4.2}The Simulation}{18}{section.122}
+\contentsline {subsection}{\numberline {4.2.1}Color Histograms}{18}{subsection.123}
+\contentsline {subsection}{\numberline {4.2.2}Spatial Cluster}{18}{subsection.124}
+\contentsline {subsection}{\numberline {4.2.3}Cost-Gain Function}{18}{subsection.125}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{18}{appendix.118}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{24}{appendix.136}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{19}{dummy.119}
+\contentsline {chapter}{Bibliography}{25}{dummy.137}

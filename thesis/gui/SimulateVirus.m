@@ -44,8 +44,8 @@ v3index = index( (N*(2/5) +1) : (N*(3/5)) );
 v4index = index( (N*(3/5) +1) : (N*(4/5)) );
 
 for lv = 1 : length(v1index)
-    colorList(v1index) = 1;
-    colorList(v2index) = 50;
+    colorList(v1index) = 50;
+    colorList(v2index) = 1;
     colorList(v3index) = 25;
     colorList(v4index) = 25;
 end
@@ -64,10 +64,10 @@ cost2 = 0;
 %shiftI1 is for influenced agent, and shift I2 is for influencing agent and
 %company itself, for compnay I
 shift11 = 5;
-shift12 = 100;
+shift12 = 1000;
 
 shift21 = 5;
-shift22 = 50;
+shift22 = 1000;
 
 fnc = [time, value1count, value2count, spread1count, spread2count, cost1, cost2];
 
@@ -175,17 +175,17 @@ for i = 1: simNum
                 cost1 = cost1 + (1/shiftFactorB);
                 x1 = x;
                 y1 = y;
-                if( mod(cost1, 2)  == 0)
-                    shift12 = shift12/2; %not affecting shift11 and shift21 for now
-                end
+%                 if( mod(cost1, 2)  == 0)
+%                     shift12 = shift12/2; %not affecting shift11 and shift21 for now
+%                 end
             else
                 spread2count = spread2count + 1; %/shiftFactorA;
                 cost2 = cost2 + (1/shiftFactorB);
                 x50 = x;
                 y50 = y;
-                if( mod(cost2, 2) == 0)
-                    shift22 = shift22/2;
-                end
+%                 if( mod(cost2, 2) == 0)
+%                     shift22 = shift22/2;
+%                 end
             end
             
             value1count = length(find(colorList == value1));

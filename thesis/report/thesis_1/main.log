@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.8)  16 MAY 2014 14:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.8)  19 MAY 2014 10:55
 entering extended mode
 **main.tex
 (D:\try_git\thesis\report\thesis_1\main.tex
@@ -868,7 +868,7 @@ Chapter 2.
 ------------------------------------------------------------------------------
 [5
 
-] <Figures/1000_agents_color_cluster.png, id=444, 421.575pt x 316.18124pt>
+] <Figures/1000_agents_color_cluster.png, id=403, 421.575pt x 316.18124pt>
 File: Figures/1000_agents_color_cluster.png Graphic file (type png)
 
 <use Figures/1000_agents_color_cluster.png>
@@ -880,7 +880,7 @@ Overfull \hbox (4.10089pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
-<Figures/spatial.png, id=446, 963.6pt x 545.03625pt>
+<Figures/spatial.png, id=405, 963.6pt x 545.03625pt>
 File: Figures/spatial.png Graphic file (type png)
  <use Figures/spatial.png>
 Package pdftex.def Info: Figures/spatial.png used on input line 86.
@@ -907,19 +907,264 @@ put line 146.
 ] [17
 
 ])
-(D:\try_git\thesis\report\thesis_1\Appendices/AppendixA.tex
+(D:\try_git\thesis\report\thesis_1\Chapters/Chapter4.tex
+Chapter 4.
+------------------------------------------------------------------------------
+ 4 Experimental Results
+------------------------------------------------------------------------------
+<Figures/base1/base1_1.png, id=536, 578.16pt x 433.62pt>
+File: Figures/base1/base1_1.png Graphic file (type png)
+
+<use Figures/base1/base1_1.png>
+Package pdftex.def Info: Figures/base1/base1_1.png used on input line 57.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base1_2.png, id=537, 578.16pt x 433.62pt>
+File: Figures/base1/base1_2.png Graphic file (type png)
+
+<use Figures/base1/base1_2.png>
+Package pdftex.def Info: Figures/base1/base1_2.png used on input line 58.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base1_3.png, id=538, 578.16pt x 433.62pt>
+File: Figures/base1/base1_3.png Graphic file (type png)
+
+<use Figures/base1/base1_3.png>
+Package pdftex.def Info: Figures/base1/base1_3.png used on input line 59.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base2_1.png, id=539, 578.16pt x 433.62pt>
+File: Figures/base1/base2_1.png Graphic file (type png)
+
+<use Figures/base1/base2_1.png>
+Package pdftex.def Info: Figures/base1/base2_1.png used on input line 69.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base2_2.png, id=540, 578.16pt x 433.62pt>
+File: Figures/base1/base2_2.png Graphic file (type png)
+
+<use Figures/base1/base2_2.png>
+Package pdftex.def Info: Figures/base1/base2_2.png used on input line 70.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base2_3.png, id=541, 578.16pt x 433.62pt>
+File: Figures/base1/base2_3.png Graphic file (type png)
+
+<use Figures/base1/base2_3.png>
+Package pdftex.def Info: Figures/base1/base2_3.png used on input line 71.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base3_1.png, id=542, 578.16pt x 433.62pt>
+File: Figures/base1/base3_1.png Graphic file (type png)
+
+<use Figures/base1/base3_1.png>
+Package pdftex.def Info: Figures/base1/base3_1.png used on input line 81.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base3_2.png, id=543, 578.16pt x 433.62pt>
+File: Figures/base1/base3_2.png Graphic file (type png)
+
+<use Figures/base1/base3_2.png>
+Package pdftex.def Info: Figures/base1/base3_2.png used on input line 82.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base3_3.png, id=544, 578.16pt x 433.62pt>
+File: Figures/base1/base3_3.png Graphic file (type png)
+
+<use Figures/base1/base3_3.png>
+Package pdftex.def Info: Figures/base1/base3_3.png used on input line 83.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base4_1.png, id=545, 578.16pt x 433.62pt>
+File: Figures/base1/base4_1.png Graphic file (type png)
+
+<use Figures/base1/base4_1.png>
+Package pdftex.def Info: Figures/base1/base4_1.png used on input line 93.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base4_2.png, id=546, 578.16pt x 433.62pt>
+File: Figures/base1/base4_2.png Graphic file (type png)
+
+<use Figures/base1/base4_2.png>
+Package pdftex.def Info: Figures/base1/base4_2.png used on input line 94.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/base4_3.png, id=547, 578.16pt x 433.62pt>
+File: Figures/base1/base4_3.png Graphic file (type png)
+
+<use Figures/base1/base4_3.png>
+Package pdftex.def Info: Figures/base1/base4_3.png used on input line 95.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff1_1.png, id=548, 578.16pt x 433.62pt>
+File: Figures/base1/diff1_1.png Graphic file (type png)
+
+<use Figures/base1/diff1_1.png>
+Package pdftex.def Info: Figures/base1/diff1_1.png used on input line 105.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff1_2.png, id=549, 578.16pt x 433.62pt>
+File: Figures/base1/diff1_2.png Graphic file (type png)
+
+<use Figures/base1/diff1_2.png>
+Package pdftex.def Info: Figures/base1/diff1_2.png used on input line 106.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff1_3.png, id=550, 578.16pt x 433.62pt>
+File: Figures/base1/diff1_3.png Graphic file (type png)
+
+<use Figures/base1/diff1_3.png>
+Package pdftex.def Info: Figures/base1/diff1_3.png used on input line 107.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff2_1.png, id=551, 578.16pt x 433.62pt>
+File: Figures/base1/diff2_1.png Graphic file (type png)
+
+<use Figures/base1/diff2_1.png>
+Package pdftex.def Info: Figures/base1/diff2_1.png used on input line 117.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff2_2.png, id=552, 578.16pt x 433.62pt>
+File: Figures/base1/diff2_2.png Graphic file (type png)
+
+<use Figures/base1/diff2_2.png>
+Package pdftex.def Info: Figures/base1/diff2_2.png used on input line 118.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff2_3.png, id=553, 578.16pt x 433.62pt>
+File: Figures/base1/diff2_3.png Graphic file (type png)
+
+<use Figures/base1/diff2_3.png>
+Package pdftex.def Info: Figures/base1/diff2_3.png used on input line 119.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff3_1.png, id=554, 578.16pt x 433.62pt>
+File: Figures/base1/diff3_1.png Graphic file (type png)
+
+<use Figures/base1/diff3_1.png>
+Package pdftex.def Info: Figures/base1/diff3_1.png used on input line 129.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff3_2.png, id=555, 578.16pt x 433.62pt>
+File: Figures/base1/diff3_2.png Graphic file (type png)
+
+<use Figures/base1/diff3_2.png>
+Package pdftex.def Info: Figures/base1/diff3_2.png used on input line 130.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff3_3.png, id=556, 578.16pt x 433.62pt>
+File: Figures/base1/diff3_3.png Graphic file (type png)
+
+<use Figures/base1/diff3_3.png>
+Package pdftex.def Info: Figures/base1/diff3_3.png used on input line 131.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff4_1.png, id=557, 578.16pt x 433.62pt>
+File: Figures/base1/diff4_1.png Graphic file (type png)
+
+<use Figures/base1/diff4_1.png>
+Package pdftex.def Info: Figures/base1/diff4_1.png used on input line 141.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff4_2.png, id=558, 578.16pt x 433.62pt>
+File: Figures/base1/diff4_2.png Graphic file (type png)
+
+<use Figures/base1/diff4_2.png>
+Package pdftex.def Info: Figures/base1/diff4_2.png used on input line 142.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff4_3.png, id=559, 578.16pt x 433.62pt>
+File: Figures/base1/diff4_3.png Graphic file (type png)
+
+<use Figures/base1/diff4_3.png>
+Package pdftex.def Info: Figures/base1/diff4_3.png used on input line 143.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff5_1.png, id=560, 578.16pt x 433.62pt>
+File: Figures/base1/diff5_1.png Graphic file (type png)
+
+<use Figures/base1/diff5_1.png>
+Package pdftex.def Info: Figures/base1/diff5_1.png used on input line 153.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff5_2.png, id=561, 578.16pt x 433.62pt>
+File: Figures/base1/diff5_2.png Graphic file (type png)
+
+<use Figures/base1/diff5_2.png>
+Package pdftex.def Info: Figures/base1/diff5_2.png used on input line 154.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff5_3.png, id=562, 578.16pt x 433.62pt>
+File: Figures/base1/diff5_3.png Graphic file (type png)
+
+<use Figures/base1/diff5_3.png>
+Package pdftex.def Info: Figures/base1/diff5_3.png used on input line 155.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff6_1.png, id=563, 578.16pt x 433.62pt>
+File: Figures/base1/diff6_1.png Graphic file (type png)
+
+<use Figures/base1/diff6_1.png>
+Package pdftex.def Info: Figures/base1/diff6_1.png used on input line 165.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff6_2.png, id=564, 578.16pt x 433.62pt>
+File: Figures/base1/diff6_2.png Graphic file (type png)
+
+<use Figures/base1/diff6_2.png>
+Package pdftex.def Info: Figures/base1/diff6_2.png used on input line 166.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+
+<Figures/base1/diff6_3.png, id=565, 578.16pt x 433.62pt>
+File: Figures/base1/diff6_3.png Graphic file (type png)
+
+<use Figures/base1/diff6_3.png>
+Package pdftex.def Info: Figures/base1/diff6_3.png used on input line 167.
+(pdftex.def)             Requested size: 190.79338pt x 143.09503pt.
+)
+(D:\try_git\thesis\report\thesis_1\Appendices/AppendixA.tex [18
+
+
+] [19 <D:/try_git/thesis/report/thesis_1/Figures/base1/base1_1.png (PNG copy)> 
+<D:/try_git/thesis/report/thesis_1/Figures/base1/base1_2.png (PNG copy)> <D:/tr
+y_git/thesis/report/thesis_1/Figures/base1/base1_3.png (PNG copy)> <D:/try_git/
+thesis/report/thesis_1/Figures/base1/base2_1.png (PNG copy)> <D:/try_git/thesis
+/report/thesis_1/Figures/base1/base2_2.png (PNG copy)> <D:/try_git/thesis/repor
+t/thesis_1/Figures/base1/base2_3.png (PNG copy)>] [20 <D:/try_git/thesis/report
+/thesis_1/Figures/base1/base3_1.png (PNG copy)> <D:/try_git/thesis/report/thesi
+s_1/Figures/base1/base3_2.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Fi
+gures/base1/base3_3.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/
+base1/base4_1.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/base1/
+base4_2.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/base1/base4_
+3.png (PNG copy)>] [21 <D:/try_git/thesis/report/thesis_1/Figures/base1/diff1_1
+.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/base1/diff1_2.png (
+PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/base1/diff1_3.png (PNG co
+py)> <D:/try_git/thesis/report/thesis_1/Figures/base1/diff2_1.png (PNG copy)> <
+D:/try_git/thesis/report/thesis_1/Figures/base1/diff2_2.png (PNG copy)> <D:/try
+_git/thesis/report/thesis_1/Figures/base1/diff2_3.png (PNG copy)>] [22 <D:/try_
+git/thesis/report/thesis_1/Figures/base1/diff3_1.png (PNG copy)> <D:/try_git/th
+esis/report/thesis_1/Figures/base1/diff3_2.png (PNG copy)> <D:/try_git/thesis/r
+eport/thesis_1/Figures/base1/diff3_3.png (PNG copy)> <D:/try_git/thesis/report/
+thesis_1/Figures/base1/diff4_1.png (PNG copy)> <D:/try_git/thesis/report/thesis
+_1/Figures/base1/diff4_2.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Fig
+ures/base1/diff4_3.png (PNG copy)>] [23 <D:/try_git/thesis/report/thesis_1/Figu
+res/base1/diff5_1.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/ba
+se1/diff5_2.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/base1/di
+ff5_3.png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/base1/diff6_1.
+png (PNG copy)> <D:/try_git/thesis/report/thesis_1/Figures/base1/diff6_2.png (P
+NG copy)> <D:/try_git/thesis/report/thesis_1/Figures/base1/diff6_3.png (PNG cop
+y)>]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-) [18
-
+) [24
 
 ]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(D:\try_git\thesis\report\thesis_1\main.bbl [19
+(D:\try_git\thesis\report\thesis_1\main.bbl [25
 
 
 ]
@@ -942,117 +1187,41 @@ man-[]human-[]h2h$[][]\OT1/cmr/m/n/10.95 .  [on-line] Ac-
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
- [20]
+ [26]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
  (D:\try_git\thesis\report\thesis_1\main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: F16C3B5AF87E1D202E1A868C1651980E;10103
-(rerunfilecheck)             After:  C36DA86F405FDAB3D46748233616478B;6122.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 6D3579C0EBB4B3BD55F5276995E6EB28;7493.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
  ) 
 Here is how much of TeX's memory you used:
- 13532 strings out of 493921
- 189467 string characters out of 3147271
- 257696 words of memory out of 3000000
- 16422 multiletter control sequences out of 15000+200000
+ 13684 strings out of 493921
+ 193494 string characters out of 3147271
+ 258902 words of memory out of 3000000
+ 16538 multiletter control sequences out of 15000+200000
  15429 words of font info for 56 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,11n,45p,689b,760s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{dummy.139} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.138} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.137} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.136} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.135} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.134} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.133} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.132} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.131} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.130} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.129} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.128} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.127} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.126} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.125} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.124} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.123} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.122} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.121} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.120} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.119} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.118} has been referenced but does not exist
-, replaced by a fixed one
-
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (31 pages, 387828 bytes).
+ 49i,13n,45p,689b,760s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (37 pages, 671578 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 196 named destinations out of 1000 (max. 500000)
- 483 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 198 named destinations out of 1000 (max. 500000)
+ 537 words of extra memory for PDF output out of 10000 (max. 10000000)
 
