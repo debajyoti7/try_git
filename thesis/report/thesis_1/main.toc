@@ -59,6 +59,6 @@
 \contentsline {section}{\numberline {6.4}Extending to Other Systems}{35}{section.160}
 \contentsline {chapter}{\numberline {7}Summary and Conclusion}{36}{chapter.161}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{37}{appendix.162}
+\contentsline {chapter}{\numberline {A}Scale Invariance}{37}{appendix.162}
 \vspace {2em}
 \contentsline {chapter}{Bibliography}{38}{dummy.163}
