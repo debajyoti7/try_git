@@ -14,7 +14,7 @@ On an abstract level, the model consists of an environment comprising of numerou
 
 \section{The Companies}
 
-The companies only exist in a superficial form in the model. In this model, each company plays the role by providing a central point for the agents to cluster about, and the movement of this point itself denotes effort made by the company, which in turn incurs a cost to the company.
+The companies only exist in a superficial form in the model. In this model, each company plays its role by providing a central point for the agents to cluster about, and the movement of this point itself denotes effort made by the company, which in turn incurs a cost to the company.
 
 The author decided to keep this model limited to two companies competing for the same spot, i.e., any agent cannot totally belong to both companies at the same time. 
 The primary reasons for this were limitations of time and computation power, in that order.
@@ -51,7 +51,7 @@ Following in the footsteps of the giants, the implementation is based on algorit
 The model is first built based on two fixed parameters, and then the simulation runs on it.
 The author starts building the model for a fixed number of total agents \emph{N}, and predefined average connectivity \emph{d} in the environment.
 The initialization of the model begins with the creation of a small, fully connected network, and then, with time, new agents are added to this network, and these agents form the connections following the rules of PA.
-The exact method for forming this connection was modified by the author, so as to further trick the environment and simulate scenarios of chances of connection being formed, but only a fraction of those connections actually being formed. This was achieved by employing a `weight' modifier on the probability of an agent to form a connection. This weight, in turn, is defined for every possible pair of agents, and is based on the difference in the value of a special attribute ``likemindedness", defined for each agent in an uniform, pseudo-random manner.
+The exact method of forming this connection was modified by the author, so as to further trick the environment. This allowed simulation of scenarios where it is possible to form a number of connections, but only a fraction of those connections are actually formed. This was achieved by employing a `weight' modifier on the probability of an agent to form a connection. This weight, in turn, is defined for every possible pair of agents, and is based on the difference in the value of a special attribute ``likemindedness", defined for each agent in an uniform, pseudo-random manner.
 This attribute is not considered an essential attribute because it may or may not be used, in various simulations. However, as an effect of using this modifier, the number of connections for an agent comes down considerably, while the nature of the connections still remain same, and the network remains scale free.
 
 
@@ -71,11 +71,11 @@ This attribute is not considered an essential attribute because it may or may no
 \label{fig:network_final}
 \end{figure}
 
-The concept of starting with a smaller network and growing it is explained in details in Chapter~\ref{Chapter2} in section~\ref{sec:model} and examples are shown in figures~\ref{fig:network_init} and ~\ref{fig:network_final}.
+The concept of starting with a smaller network and growing it is explained in detail in Chapter~\ref{Chapter2} in section~\ref{sec:model} and examples are shown in figures~\ref{fig:network_init} and ~\ref{fig:network_final}.
 
 \subsection{The Simulation} 
  
-The simulation begins with allocating ``influence" value to each agent, as a function of the number of connection it makes. This makes sure that the most-connected agents get a chance to be more influential. 
+The simulation begins with allocating ``influence" value to each agent, as a function of the number of connections it makes. This makes sure that the most-connected agents get a chance to be more influential. 
 After this, values are uniformly assigned to all agents for the ``color" attribute, and then they are seeded to belong to different companies. 20 \% was the value chosen by the author for initial amount of seeding, for the following combination of reasons:
 
 \begin{enumerate}
@@ -97,11 +97,11 @@ Then, the simulation is run, where in each time step, an edge is selected random
 After this, the influence value of the FromNode is subjected to a randomly selected threshold, and upon satisfaction, the actual communication occurs. The threshold is lowered depending on a company's efforts towards attracting the customer. 
 
 The selection of the edge depicts existence of a connection, while satisfaction of the threshold depicts the actual communication. This constraint was included to make the simulation model even closer to real-life. 
-Hence, a higher effort would result in more cost, but would give a company more chances of a successful communication.
+Hence, a higher effort would result in more cost, but would give a company higher chances of a successful communication.
 
 For every successful communication, the agents shift their ``color" attribute a fraction towards the influencing company. This shift also translates to their x-y coordinate, which is shown in the presentation. The important aspect here is that these changes in color and x-y coordinates, while not always causally related, are always correlated. 
 
-For the companies, however, it has different significance. Whenever an agent has moved closer, the companies also make an effort and move some fraction towards the agents. The amount of distance moved by the company represents the effort it makes, and is determined by the company policies. These movements also incurs the cost to the company, and a combined function of the gain and this cost determines the effectiveness of the policy.
+For the companies, however, it has different significance. Whenever an agent has moved closer, the companies also make an effort and move some fraction towards the agents. The amount of distance moved by the company represents the effort it makes, and is determined by the company policy. These movements also incurs the cost to the company, and a combined function of the gain and this cost determines the effectiveness of the policy.
 
 Towards the end of the campainging, a company may increase their effort to maximise chances of gain. This is achieved in the model by doubling the shift amount whenever a certain amount has been spent on the campaigning.
 
@@ -123,7 +123,7 @@ function = gain - cost \\
 \begin{enumerate}
 \item \emph{Fully Connected}
 
-It follows the standard definition that each node is connected to every other node. The initial network is formed in a manner such that it is fully connected and satisfies the average number of total connections.
+It follows the standard definition that each node is connected to every other node. The initial network is formed in such a manner that it is fully connected and satisfies the average number of total connections.
 
 \item \emph{Likemindedness}
 
@@ -156,8 +156,8 @@ influence_{i} = \frac{connections_i}{connections_{max}}
 
 \item \emph{Shift}
 
-This shift represents a change in the state of the overall system. For an agent, a shift in it's color attribute represents the agent leaning towards a company. This shift is correlated with the same ratio of change in the agent's x-y coordinate, used for visualization purposes.
-For a company, the shift only occurs in it's x-y coordinate, which is caused by the x-y shift of the agent, and this change represents two things : 
+This shift represents a change in the state of the overall system. For an agent, a shift in its color attribute represents the agent leaning towards a company. This shift is correlated with the same ratio of change in the agent's x-y coordinate, used for visualization purposes.
+For a company, the shift only occurs in its x-y coordinate, which is caused by the x-y shift of the agent, and this change represents two things : 
 \subitem[a] The speed and frequency of movement represent the effort taken by the company
 \subitem[b] The distance moved represent the cost incurred to the company
 \end{enumerate}

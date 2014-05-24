@@ -18,7 +18,7 @@
 %-----------------------------------
 \subsection{Network Model}
 \label{sec:model}
-It was an obvious choice to select scale-free topologies for modeling the network structure.  But B-A model also proposes variants of the scale free structure depending on it's characteristics. These characteristics are : 
+It was an obvious choice to select scale-free topologies for modeling the network structure.  But B-A model also proposes variants of the scale free structure depending on its characteristics. These characteristics are : 
 
 \begin{enumerate}
 \item Continuous Growth (CG)
@@ -27,8 +27,8 @@ This states that the network grows continuously. i.e., at all times, new nodes a
 
 
 \item Preferential Atachment (PA)
-This states the rule any node should follow while making connections. It states that the most connected nodes are most likely candidates to form a connection with.
-The connections are formed according to the probaility which is calculated as :
+This formulates the rule a node should follow while making connections. It states that the most connected nodes are the most likely candidates to form a connection with.
+The connections are formed according to a probaility value which is calculated as :
 
 \begin{eqnarray}
  p_i = \frac{k_i}{\sum_{j=1}^{N} k_j} 
@@ -47,14 +47,14 @@ where,
 
 \end{enumerate} 
 
-Now, a scale free network may exhibit either or both of above characteristics. However, the author decided to include both attributes in his model to make it as close to real life as possible. 
+Now, a scale free network may exhibit either or both of the above characteristics. However, the author decided to include both attributes in his model to make it as close to real life as possible. 
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 \subsection{Orientation and View of the simulation environment}
 
-Initially, an object oriented view was used to give better control over the network agents. But this led to higher time complexity, and the author decide to switch to a connection-view model, where more focus was given to the connections being formed and everything was managed from that view. This resulted in significant decrease in time complexity.
+Initially, an object oriented view was used to give better control over the network agents. But this led to higher time complexity, and the author chose to switch to a connection-oriented model, where more focus was given to the connections being formed and everything was managed from that view. This resulted in significant decrease in time complexity.
 Also, focusing on the connections was easier as the whole network could be minimally represented by using the edge list.
 
 
@@ -63,8 +63,8 @@ Also, focusing on the connections was easier as the whole network could be minim
 %-----------------------------------
 
 \subsection{The Model}
-The author decided to focus on a competitive diffusion where the companies compete over a single attribute of the agent. The attribute \emph{color} was chosen for the simulation as it is easy to understand and visualise, and let's us present the effect in a 2-dimensional model where clustering is not directly dependent on the axial values. 
-As a limiting case, the author decided to simulate only two companies. This limits the scope as it does not give much insight into cases where two companies might collaborate for mutual benefit, like to win against a third rival company.
+The author surmised to focus on a competitive diffusion where the companies compete over a single attribute of the agent. The attribute \emph{color} was chosen for the simulation as it is easy to understand and visualise, and it enabled the author to present the effect in a 2-dimensional spatial model where clustering is not directly dependent on the axial values. 
+As a limiting case, the author simulated only two companies. This limits the scope as it does not give much insight into cases where two companies might collaborate for mutual benefit, like to win against a third rival company.
 
 The model makes use of random functions wherever applicable, and uses this to simulate the effect of `chance'. This inherent randomness makes the system non-deterministic and more reliable.
 
@@ -84,7 +84,7 @@ The model makes use of random functions wherever applicable, and uses this to si
 
 
 Like for any project with a large number of agents, a clear and easy to understand presentation of the simulation was imperative.
-Initially the author went with 2-D histograms depicting the membership values of each color group, which presented nicely how the members moved around as the height of the  bars representing the number of members in a group could be easily seen to rise or fall, and the speed of this descent or ascent would tell about the rat of success or failure for a particular color. An example could be seen in figure~\ref{fig:color_clusters}.
+Initially, the author went with 2-D histograms depicting the membership values of each color group, which accurately presented how the members move around as the height of the bars representing the number of members in a group could be easily seen to rise or fall, and the speed of this descent or ascent would tell about the rate of success or failure for a particular color. An example could be seen in figure~\ref{fig:color_clusters}.
 
 \begin{figure}
 \includegraphics[scale=0.5]{Figures/spatial}
@@ -94,7 +94,7 @@ Initially the author went with 2-D histograms depicting the membership values of
 
 
 
-However, with the progress of the model this model became obsolete as it was unable to represent the aspect of ``Cost" to a company. 
+However, with the progress of the model this representation became obsolete as it was unable to represent the aspect of ``Cost" to a company. 
 To address this necessity, the author decided to switch to a 3-Dimensional presentation, with X- and Y- axes representing generic movement for agents, and the movement or effort as well as incurred cost for the companies, ad the color, being the 3-rd dimension of the presentation, depicting the value of the attribute. The speed of movement here serves the purpose as the speed of rise/fall in the previous model. An example of this is figure ~\ref{fig:spatial_clusters}.
 
 While the X-Y movement in this model, for the agents, is a correlation, the changing colors as they move represent the agents leaning towards or away from a particular company.
@@ -151,16 +151,16 @@ Whenever an agent is influenced, during the simulation, this also causes the com
 
 \end{enumerate}
 
-The outcome of these interactions are measured by the following two values
+The outcome of these interactions are measured by the following two values:
 
 \begin{enumerate}
 \item[a] Gain
 
-This refers to a success for a company in influencing an agent to lean towards itself.
+This refers to a company successfully influencing an agent to lean towards itself.
 
 \item[b] Cost
 
-This refers to the cost incurred to the company and is a fucntion of the effort taken by the company. It depends on the policy being followed by the company.
+This refers to the cost incurred to the company and is a function of the effort made by the company. It depends on the policy being followed by the company.
 \end{enumerate}
 	
 

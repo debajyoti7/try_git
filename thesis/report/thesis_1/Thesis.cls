@@ -186,7 +186,7 @@ Signal Analysis in Complex Networks} % Your thesis title - this is used in the t
 %-------------------------------------------------  
 \supervisor{Baran \textsc{C\"ur\"ukl\"u}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
-\examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
+\examiner{Mikael \textsc{Ekstr\"om}} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
 \degree{Master of Science} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   

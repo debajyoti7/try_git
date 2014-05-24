@@ -13,10 +13,10 @@
 \contentsline {section}{\numberline {1.1}Networks}{1}{section.14}
 \contentsline {subsection}{\numberline {1.1.1}Computer Networks}{1}{subsection.15}
 \contentsline {subsection}{\numberline {1.1.2}Social Networks}{1}{subsection.16}
-\contentsline {subsection}{\numberline {1.1.3}Scale-Free Networks}{1}{subsection.17}
+\contentsline {subsection}{\numberline {1.1.3}Scale-Free Networks}{2}{subsection.17}
 \contentsline {section}{\numberline {1.2}State of the Art}{2}{section.19}
 \contentsline {subsection}{\numberline {1.2.1}State of the art in networked devices}{2}{subsection.20}
-\contentsline {subsection}{\numberline {1.2.2}Examples of State of the Art networked devices }{2}{subsection.21}
+\contentsline {subsection}{\numberline {1.2.2}Examples of State of the Art networked devices }{3}{subsection.21}
 \contentsline {section}{\numberline {1.3}Motivation}{3}{section.25}
 \contentsline {subsection}{\numberline {1.3.1}Why Scale-Free Networks}{3}{subsection.26}
 \contentsline {subsection}{\numberline {1.3.2}Human to Human}{4}{subsection.27}
