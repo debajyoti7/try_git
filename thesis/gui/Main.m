@@ -2,7 +2,7 @@ function [ edgeList, degreeList, vertexList, colorList, fnc, weight, in, out] = 
 %Main Generates and simulates a scale free network.
 %   This follows the approach presented by BA-algorithm to create a
 %   fully-connected seed network and introduce new nodes to it (Continuous
-%   Growth) in a manner that the incoming nodes tend to connect to higest
+%   Growth) in a manner that the incoming nodes tend to connect to highest
 %   connected nodes (Preferential Attachment).
 
 %create seed network
