@@ -74,10 +74,10 @@
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------
-\setmarginsrb  { 1.5in}  % left margin
-                        { 0.6in}  % top margin
+\setmarginsrb  { 1.0in}  % left margin
+                        { 1.0in}  % top margin
                         { 1.0in}  % right margin
-                        { 0.8in}  % bottom margin
+                        { 1.0in}  % bottom margin
                         {  20pt}  % head height
                         {0.25in}  % head sep
                         {   9pt}  % foot height
@@ -181,7 +181,7 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Innovation Diffusion in Scale-Free Networks : 
+\thesistitle{Innovation Diffusion in Scale-Free Networks: 
 Signal Analysis in Complex Networks} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
 \supervisor{Baran \textsc{C\"ur\"ukl\"u}} % You supervisor's name - this is used in the title page
