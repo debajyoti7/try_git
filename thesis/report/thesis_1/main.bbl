@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,10 @@ A.-L. {Barab{\'a}si} and R.~{Albert}.
 \newblock {Emergence of Scaling in Random Networks}.
 \newblock \emph{Science}, 286:\penalty0 509--512, October 1999.
 \newblock \doi{10.1126/science.286.5439.509}.
+
+\bibitem[Dif(2003)]{DiffusionofInnovations}
+\emph{Diffusion of Innovations}.
+\newblock Simon and Schuster, 2003.
 
 \bibitem[{Albert} and {Barab{\'a}si}(2002)]{2002RvMP...74...47A}
 R.~{Albert} and A.-L. {Barab{\'a}si}.
@@ -123,18 +127,18 @@ Bryan Kramer.
   \url{http://socialmediatoday.com/bryan-kramer/2115561/there-no-more-b2b-or-b2c-it-s-human-human-h2h}.
 \newblock [online] Accessed: 2014-05-10.
 
-\bibitem[Sandén(2007)]{bodil}
-Bodil Sandén.
-\newblock The customer's role in new service development.
-\newblock 2007.
-\newblock URL \url{http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-785}.
-
 \bibitem[Ives and Olson()]{1984}
 Blake Ives and Margrethe~H. Olson.
 \newblock User involvement and mis success: A review of research.
 \newblock \emph{Management Science}, 30\penalty0 (5):\penalty0 pp. 586--603.
 \newblock ISSN 00251909.
 \newblock URL \url{http://www.jstor.org/stable/2631374}.
+
+\bibitem[Sandén(2007)]{bodil}
+Bodil Sandén.
+\newblock The customer's role in new service development.
+\newblock 2007.
+\newblock URL \url{http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-785}.
 
 \bibitem[Jung(1921)]{jung1921question}
 C.G. Jung.

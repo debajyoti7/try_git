@@ -31,12 +31,12 @@ P(k) \sim k^{-\gamma}
 In general, the degree distribution of the network follows a power law. This means that the network is scalable, and the properties of degree distribution of the nodes is not affected by the size of the network. These networks follow a strategy such that there are a lot of nodes with few connections, and a very few nodes with significantly larger number of connections.
 These highly-connected nodes can be though of as hubs in the network.
 
-The work in~\cite{1999Sci...286..509B} explains how diverse systems are best described as complex topological networks, and shows how prevalent scale-free networks are in natural as well as man-made structures alike. It presents a reproducible model which indicates strong self-governing principles lead to formation of such networks without being affected by the particulars of the individuals.
+The work in ~\cite{1999Sci...286..509B} explains how diverse systems are best described as complex topological networks, and shows how prevalent scale-free networks are in natural as well as man-made structures alike. It presents a reproducible model which indicates strong self-governing principles lead to formation of such networks without being affected by the particulars of the individuals.
 
 The author uses this approach successfully in this thesis to develop a model despite the heterogeneous nature of the different agents in the network.
 
 \subsection{Innovation Diffusion}
-\textit{Diffusion of innovations} refers to the theory of understanding the factors governing spread and acceptance of any new idea or product in a social system. It tries to understand and formalise the critical point in the process of spreading the idea after which the idea can self-sustain in the system. In his book~\cite{DiffusionofInnovations}, Everett Rogers explains how this process relies heavily on human capital and proposes the four main influencing factors, namely : 
+\textit{Diffusion of innovations} refers to the theory of understanding the factors governing spread and acceptance of any new idea or product in a social system. It tries to understand and formalise the critical point in the process of spreading the idea after which the idea can self-sustain in the system. In his book \cite{DiffusionofInnovations}, Everett Rogers explains this process relies heavily on human capital and proposes the four main influencing factors, namely : 
 \begin{tabular}{l}
 \textit{The innovation itself} \\ 
 \textit{Communication channels} \\ 

@@ -124,7 +124,7 @@ Diff6 & 0.01 & 0.02 \\
 \end{center}
 \end{table}
 
-It is to be noted here that during the simulations, the costs in the last 6 cases mentioned above were randomly assigned to the companies, i.e., \textit{cost1} and \textit{cost2} may be interchanged. This accommodates for the reverse ordering of the columns without the need of including extra cases.
+It is to be noted here that during the simulations, the costs in the last 6 cases mentioned above were randomly assigned to the companies, i.e., cost1 and cost2 may be interchanged. thus accommodates for the reverse ordering of the columns as well.
 
 %-----------------------------------
 %	SUBSECTION 1
