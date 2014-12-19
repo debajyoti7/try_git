@@ -27,7 +27,7 @@ The primary reasons for this were limitations of time and computation power, in 
 
 The agents in this model are simpler constructs, each  having a ``color" attribute, and this attribute changes as the agents tend to believe in either of the companies.
 
-Structurally, each agent has following attributes :
+Structurally, each agent has the following attributes :
 
 \begin{enumerate}
 \item Id
@@ -44,14 +44,13 @@ During its lifetime, an agent has constant value for its Id, but the rest of its
 %-----------------------------------
 
 \section{Connections}
-The connections between the agents form in such a manner that the model satisfies the requirements of free-scaling. 
-Following in the footsteps of the giants, the implementation is based on algorithm ~\ref{alg1}, which is a modified form of the B-A algorithm.
+The connections between the agents form in such a manner that the model satisfies the requirements of free-scaling. The implementation is based on algorithm ~\ref{alg1}, which is a modified form of the B-A algorithm.
 
 \subsection{The World}
 The model is first built based on two fixed parameters, and then the simulation runs on it.
 The author starts building the model for a fixed number of total agents \emph{N}, and predefined average connectivity \emph{d} in the environment.
-The initialization of the model begins with the creation of a small, fully connected network, and then, with time, new agents are added to this network, and these agents form the connections following the rules of PA.
-The exact method of forming this connection was modified by the author, so as to further trick the environment. This allowed simulation of scenarios where it is possible to form a number of connections, but only a fraction of those connections are actually formed. This was achieved by employing a `weight' modifier on the probability of an agent to form a connection. This weight, in turn, is defined for every possible pair of agents, and is based on the difference in the value of a special attribute ``like-mindedness", defined for each agent in an uniform, pseudo-random manner.
+The initialization of the model begins with the creation of a small, fully connected network, and then, with time, new agents are added to this network, and these agents form the connections following the rules of preferential attachment.
+The exact method of forming a connection was modified by the author, so as to further trick the environment. This allowed simulation of scenarios where it is possible to form a number of connections, but only a fraction of those connections are actually formed. This was achieved by employing a `weight' modifier on the probability of an agent to form a connection. This weight, in turn, is defined for every possible pair of agents, and is based on the difference in the value of a special attribute ``like-mindedness", defined for each agent in a uniform, pseudo-random manner.
 This attribute is not considered an essential attribute because it may or may not be used, in various simulations. However, as an effect of using this modifier, the number of connections for an agent comes down considerably, while the nature of the connections still remain same, and the network remains scale free.
 
 

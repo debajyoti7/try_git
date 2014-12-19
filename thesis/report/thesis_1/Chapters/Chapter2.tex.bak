@@ -22,8 +22,7 @@ Naturally occurring topologies like protein chains, cooperation networks and soc
 
 \begin{enumerate}
 \item Continuous Growth (CG)
-This characteristic marks that the network grows continuously. i.e., at all times, new nodes are being attached to the the network. At the beginning of the simulation, the network only has a small number of nodes and this is known as the \textit{seed network}, and with time, new nodes are introduced in the network and it grows in size. The author uses a \textit{fully-connected network} as a seed network. Fully-connected network means each node of the network is connected to every other node in the network.
-
+This characteristic marks that the network grows continuously. i.e., at all times, new nodes are being attached to the network. At the beginning of the simulation, the network only has a small number of nodes and this is known as the \textit{seed network}, and with time, new nodes are introduced in the network and it grows in size. The author uses a \textit{fully-connected network} as a seed network. Fully-connected network means each node of the network is connected to every other node in the network. It is to be noted here that the size of the network remains static throughout the simulation.
 
 \item Preferential Attachment (PA)
 This characteristic formulates the rule an incoming node should follow while making new connections within the network. It states that the most connected nodes are the most likely candidates for forming a new connection with. This leads on to a \textit{`rich gets richer'} tendency, and highly connected hubs are formed.
@@ -56,7 +55,7 @@ A scale free network may exhibit either or both of the above characteristics. Ho
 Initially, an object-oriented view was used in the model to give better control over the agents in the network. But this led to very high time complexity, and the author chose to switch to a connection-oriented view of the model, where more focus was given to the connections being formed and everything was managed according to that view. This resulted in significant decrease in time complexity.
 Also, focusing on the connections was easier as the whole network could be minimally represented by using the edge list.
 
-Throughout the simulation, the network is represented by an edge list. It's a list, where each entry is a vector, and minimally this vector is a pair of two identification numbers referring to two distinct nodes. The presence of such a pair indicates the presence of a connection between the two nodes. It's notable that the values are always distinct, and this eliminates any chance of self-looping within the network. Optionally, the entries may contain other properties of the particular connection that may be used at different stages throughout the simulation.
+Throughout the simulation, the network is represented by an edge list. It is a list, where each entry is a vector, and minimally this vector is a pair of two identification numbers referring to two distinct nodes. The presence of such a pair indicates the presence of a connection between the two nodes. It is notable that the values are always distinct, and this eliminates any chance of self-looping within the network. Optionally, the entries may contain other properties of the particular connection that may be used at different stages throughout the simulation.
 
 These connections are treated as a probabilistic possibility for a communication between the nodes. However, presence of such a connection does not ensure that a communication takes place. The actual communication depends on more factors and more conditions need to be satisfied for that. These conditions are explained in detail in the next chapter~\ref{Chapter3}.
 
@@ -97,9 +96,9 @@ Initially, the author went with 2-D histograms depicting the membership values o
 
 
 However, with the progress of the model this representation became obsolete as it was unable to represent the aspect of ``Cost" to a company. 
-To address this necessity, the author decided to switch to a 3-Dimensional presentation, with X- and Y- axes representing generic movement for agents, and the movement or effort as well as incurred cost for the companies, and the color, being the third dimension of the presentation, depicting the value of the attribute. The speed of movement here serves the purpose as the speed of rise/fall in the previous model. An example of this is figure ~\ref{fig:spatial_clusters}.
+To address this necessity, the author decided to switch to a 3-Dimensional presentation, with X- and Y- axes representing generic movement for agents, and the movement or effort as well as incurred cost for the companies. The color, being the third dimension of the presentation, depicts the value of the attribute and shows how an agent is leaning towards a company. The speed of movement here serves the purpose as the speed of rise/fall in the previous model. An example of this is figure ~\ref{fig:spatial_clusters}.
 
-While the X-Y movement in this model, for the agents, is a correlation, the changing colors as they move represent the agents leaning towards or away from a particular company.
+While the X-Y movement in this model is a correlation for the agents, the changing colors as they move represent the agents leaning towards or away from a particular company.
 
 %-----------------------------------
 %	SUBSECTION 5
@@ -125,7 +124,7 @@ organizational performance evaluation is dependent on the
 outcome of the development effort. 
 \end{enumerate}
 
-The customer involvement continuum followed by the author follows the above categorisation and is influenced by the works of Bodil Sanden~\cite{bodil}, which argues that \textit{interaction is essential to customer involvement, specially in development of new sevices}.
+The customer involvement continuum followed by the author follows the above categorisation and is influenced by the work of Bodil Sanden~\cite{bodil}, which argues that \textit{interaction is essential to customer involvement, specially in development of new sevices}.
 
 Out of these, this thesis focuses on categories 2 and 5.
 These two specific categories were chosen because they represent most dissimilar choices while still avoiding the extreme conditions, which allows the model to simulate the more probable scenarios.
@@ -142,17 +141,17 @@ The model witnesses three types of potential interactions :
 \begin{enumerate}
 \item[1] Company to Agent interaction 
 
-These interactions are predefined, in a sense that a certain number of agents are already seeded to believe in a company at the beginning of the simulation. This is explained further in Chapter ~\ref{Chapter3}. This helps in creating an established base of users for the company. During the initial seeding, both companies are seeded with equal number of agents randomly chosen from the whole system and it is taken care of that there is no overlap in this initial customer base, i.e., all the agents being seeded are different.
+These interactions are predefined, in a sense that a certain number of agents are already seeded to believe in a company at the beginning of the simulation. This is explained further in Chapter ~\ref{Chapter3}. This helps in creating an established base of users for the company. During the initial seeding, both companies are seeded with equal number of agents randomly chosen from the whole system and it is taken care of that there is no overlap in this initial customer base, i.e., all the agents being seeded are unique.
 
 \item[2] Agent to Agent interactions
 
-These interactions are the means by which one agent \textit{may influence} another to lean towards a company. In this model, the agents belonging to either of the companies in question are referred to as  \emph{influencing agents}, and the others are referred to as \emph{influenced agents}. This also mimics real life as the connections betweens agents are directional. The \textit{influencing agent} tries to motivate the \textit{influenced agent} to move towards it's parent company, but the success or failure is decided based on a certain threshold value. This value depicts traits of the \textit{influencing agent} in question and the threshold is decided randomly, depicting traits of the \textit{influenced agent} and external factors such as luck and chance.
+These interactions are the means by which one agent \textit{may influence} another to lean towards a company. In this model, the agents belonging to either of the companies in question are referred to as  \emph{influencing agents}, and the others are referred to as \emph{influenced agents}. This also mimics real life as the connections between agents are directional. The \textit{influencing agent} tries to motivate the \textit{influenced agent} to move towards its parent company, but the success or failure is decided based on a certain threshold value. This value depicts traits of the \textit{influencing agent} in question and the threshold is decided randomly, depicting traits of the \textit{influenced agent} and external factors such as luck and chance.
 
 \item[3] Agent to Company interactions
 
-Whenever an \textit{influenced agent} is successfully influenced, during the simulation, this also causes the company to make some effort, the amount of which depends on its policies. These interactions are what cause the cost to the company. 
+Whenever an \textit{influenced agent} is successfully influenced during the simulation, this also causes the company to make some effort, the amount of which depends on its policies. These interactions are what cause the cost to the company. 
 
-It is to be noted here that the \textit{influenced agent} in question need not be a new addition to the customer base of the company. It may already be a customer, however, further successful influence means that it's loyalty towards the company is increased, which is denoted by a decrease in the distance between the agent and the company. 
+It is to be noted here that the \textit{influenced agent} in question need not be a new addition to the customer base of the company. It may already be a customer, however, further successful influence means that its loyalty towards the company is increased, which is denoted by a decrease in the distance between the agent and the company. 
 
 
 \end{enumerate}

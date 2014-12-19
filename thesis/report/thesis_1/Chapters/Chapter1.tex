@@ -12,11 +12,10 @@
 A network is an arrangement of two or more different entities, mostly linked together for sharing resources. The resources being shared can be either physical or otherwise. These entities being connected are referred to as nodes, and the links between them are called the connections of the network. 
 
 \subsection{Computer Networks}
-Computer Networks are networks of interconnected devices that can exchange and share information and resources. The nodes in a computer network can by devices such as a laptop computers, smartphones, or even fitness trackers and smart wearables. These networks may be categorized depending on the type of connections being formed, and the rules or protocols governing communications between different nodes within the network. While most nodes may support both incoming and outgoing connections, some nodes may have restrictions and only support one type of connections. Such networks are also known as Data Networks. 
+Computer Networks are networks of interconnected devices that can exchange and share information and resources. The nodes in a computer network can be devices such as laptop computers, smartphones, or even fitness trackers and smart wearables. These networks may be categorized depending on the type of connections being formed, and the rules or protocols governing communications between different nodes within the network. While most nodes may support both incoming and outgoing connections, some nodes may have restrictions and only support one type of connections. Such networks are also known as \textit{Data Networks}. 
 
 \subsection{Social Networks}
-Social Networks refer to arrangement of individual agents, most commonly humans or their digital representatives, such that these arrangements are dependent on the actions of the agents and also influence their future actions. This is also referred to as a `social structure'. 
-With the personalization of technology, computer networks are shaping themselves to get even closer to the social networks in terms of structure, shape, size, and degree distribution, for example. A comprehensive review of the same was done by Newman~\cite{Newman03thestructure}. 
+Social Networks refer to arrangement of individual agents, most commonly humans or their digital representatives, such that these arrangements are dependent on the actions of the agents and also influence their future actions. This is also referred to as a `social structure'. With the personalization of technology, computer networks are shaping themselves to get even closer to the social networks in terms of structure, shape, size, and degree distribution, for example. A comprehensive review of the same was done by Newman~\cite{Newman03thestructure}. 
 
 This is particularly important and interesting with the emergence of personalized wearable devices. This could lead to a 1:1 man to machine ratio, which would mean, when allowed, the personal devices would network exactly as their users.
 
@@ -28,8 +27,7 @@ P(k) \sim k^{-\gamma}
 \label{eqn:power law}
 \end{equation}
 
-In general, the degree distribution of the network follows a power law. This means that the network is scalable, and the properties of degree distribution of the nodes is not affected by the size of the network. These networks follow a strategy such that there are a lot of nodes with few connections, and a very few nodes with significantly larger number of connections.
-These highly-connected nodes can be though of as hubs in the network.
+In general, the degree distribution of the network follows a power law. This means that the network is scalable, and the properties of degree distribution of the nodes is not affected by the size of the network. These networks follow a strategy such that there are a lot of nodes with few connections, and a very few nodes with significantly larger number of connections. These highly-connected nodes can be thought of as hubs in the network.
 
 The work in~\cite{1999Sci...286..509B} explains how diverse systems are best described as complex topological networks, and shows how prevalent scale-free networks are in natural as well as man-made structures alike. It presents a reproducible model which indicates strong self-governing principles lead to formation of such networks without being affected by the particulars of the individuals.
 
@@ -44,7 +42,7 @@ The author uses this approach successfully in this thesis to develop a model des
 \textit{Social system} \\
 \end{tabular} 
 
-Among these, the author decided to focus on the affect of the structure of the social system and time of campaigning for this thesis. He also decided to restrict the communication channel as much as possible to accommodate for the fact of randomness and chance in real world scenarios.
+Among these, the author decided to focus on the effect of the structure of the social system and time of campaigning for this thesis. He also decided to restrict the communication channel as much as possible to accommodate for the fact of randomness and chance in real world scenarios.
 
 \section{State of the Art}
 Humans in present day society must network to sustain and complete tasks. Studies have shown networks to evolve over time to optimize functionalities, and increase reach and longevity. These evolutions may be guided or self-governed. The most coveted type of network, perhaps, is the kind formed naturally among varied entities, i.e., free scaling networks ~\cite{1999Sci...286..509B, 2002RvMP...74...47A}.
@@ -55,11 +53,11 @@ It is prominent that existing social networks tend to scale freely and it is saf
 
 \subsection{State of the art in networked devices}
 
-Internet of Things~\cite{Internet-of-things} - Internet connectivity and accessibility in present day enables direct linking of everyday physical objects, overcoming the spatio-temporal boundaries. This upgrades a part of our lives to the so called cloud.
-It makes our lives easier, but also raises confusion as the complexity of processes increase manifold. 
+Internet of Things~\cite{Internet-of-things} - Internet connectivity and accessibility in present day enables direct linking of everyday physical objects, overcoming the spatio-temporal boundaries. This upgrades a part of our lives to the cloud and allows better incorporation of virtual reality in everyday life.
+It makes our lives easier, but also raises confusion as the complexity of processes increases manifold. 
 
-Cyber-Physical Systems and Machine-to-Machine~\cite{6601317} - Internet of Things is a small part of a larger picture, where computational devices of all size and shape interact with each other and with everyday objects to perform complex tasks, ranging from temperature control in a modern house, to automatic detection of spread of a potentially fatal epidemic.
-Machine-to-Machine communication makes it possible for sensors spread over a large area to share the load of detecting varied signals, while some entirely different processing entity looks into that raw data and extracts meaningful information from it, and then a strong/special link actuates some physical entity to act based on the  information just gathered. However, large scale implementations of Cyber-Physical Systems face a major challenge due to the heterogeneous nature of network elements.
+Cyber-Physical Systems and Machine-to-Machine~\cite{6601317} - Internet of Things is a small part of a larger picture, where computational devices of all size and shape interact with each other and with everyday objects to perform complex tasks, ranging from temperature control in a modern house, to automatic detection of outbreak of a potentially fatal epidemic.
+Machine-to-Machine communication makes it possible for sensors spread over a large area to share the load of detecting varied signals, while some entirely different processing entity looks into that raw data and extracts meaningful information from it, and then a separate link actuates some physical entity to act based on the information just gathered. However, large scale implementations of Cyber-Physical Systems face a major challenge due to the heterogeneous nature of network elements.
 
 \subsection{Examples of State of the Art networked devices }
 \begin{enumerate}
@@ -85,16 +83,15 @@ Swarm robots are a good example of how even heterogeneous entities can work toge
 
 \section{Motivation}
 
-Since networks are everywhere, it's important we understand their nature and working so as to exploit and utilize them to our benefit.  
-Going back as far as the 18th century, the ``Seven Bridges of Königsberg"~\cite{konigsberg} might be the most famous networking problem. Ranging from the Travelling-Salesman~\cite{traveling} to Graph-Colouring algorithms~\cite{graph}, insight into the working of networks have helped greatly in optimizing several issues.
+Since networks are everywhere, it is important to understand their nature and working so as to exploit and utilize their full potential. Going back as far as the 18th century, the ``Seven Bridges of Königsberg"~\cite{konigsberg} might be the most famous networking problem. Ranging from the Travelling-Salesman~\cite{traveling} to Graph-Colouring algorithms~\cite{graph}, insight into the working of networks have helped greatly in optimizing several issues.
 
 \subsection{Why Scale-Free Networks}
 
 Scale-Free networks are the most prevalent in nature. Hence, it is paramount to model networking of personal devices used by humans on the same topology. 
-This model aims to gain insight into the workings of such networks, so as to optimize the network elements and make use of their full potential. For e.g.., by finding the optimal positioning for a self-assembling network of satellites, military installations can provide improved security at a lesser cost. Or multiple groups of Swarm networks, like groups of eye-hand-feet bots~\cite{swarm..robots}, can work together as a collective with an increased proficiency.  Most importantly, due to the autonomous nature of most network elements, these networks can be formed anywhere, water, air, or land, and can accomplish a multitude of tasks.
+This model aims to gain insight into the working of such networks, so as to optimize the network elements and make better use of all available resources. For e.g., by finding the optimal positioning for a self-assembling network of satellites, military installations can provide improved security for a lesser cost. Or multiple groups of Swarm networks, like groups of eye-hand-feet bots~\cite{swarm..robots}, can work together as a collective with an increased proficiency.  Most importantly, due to the autonomous nature of most network elements, these networks can be formed anywhere, water, air, or land, and can accomplish a multitude of tasks.
 
-\subsection{Human to Human}
-Human beings are innately complex, yet strive for simplicity~\cite{h2h}. The challenge today as humans is to find, understand and explain the complex in its most simplistic form. This is important not only for businesses, but for overall development of human society to a point where communications may have the desired effect to a greater extent.
+\subsection{Human to Human Interactions}
+Human beings are complex by characteristic behaviour and in their working, but they strive for simplicity in everyday life~\cite{h2h}. The challenge today as humans is to find, understand and explain the complex in its most simplistic form. This is important not only for businesses, but for overall development of human society to a point where communications may have the desired effect to a greater extent. Personal interactions are till date the most effective form of influencing an audience and better understanding of the actual communication process could lead to developments with multi-faceted impacts in human life.
 
 
 \subsection{Future Sight}
@@ -108,7 +105,7 @@ Networked devices could make life easier and yet more manageable.
 
 \section{Aim}
 This thesis aims to analyse diffusion of innovation in the society.  
-The author simulates a real-world scenario where companies try to influence customers by spreading an idea or publicizing their products. As an effect, the customer agents, hereinafter referred to as `agents' only, tend to lean towards the company if they are successfully , and enough, influenced.
-However, this campaigning propaganda incurs some costs to the companies. The author tries to find a balance between gain and cost for the company, in order to formulate a strategy which can be effectively used by the company to optimally attract customers. 
+The author simulates a real-world scenario where companies try to influence customers by spreading an idea or publicizing their products. As an effect, the customer agents, hereinafter referred to as `agents' only, tend to lean towards the company if they are successfully, and enough, influenced.
+However, this campaigning propaganda incurs some cost to the companies. The author tries to find a balance between gain and cost for the company, in order to formulate a strategy which can be effectively used by the company to optimally attract customers. 
 
 Different companies have different policies towards customer involvement and making an effort towards further attracting the customer. The objective here is to analyse and evaluate two of such policies, and to determine which policy is optimal for the given circumstances.
